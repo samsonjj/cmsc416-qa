@@ -41,6 +41,8 @@ while( 1 ) {
 
     # Store the query expansions here. They should be ordered by most precise to least precise.
     my @queryExpansion = ();
+    # Store the answer expansions that correspond to the above query expansions.
+    # my @answerExpansion = ();
     # Store the key term here, which we will search for in wikipedia.
     my $keyTerm;
 
@@ -50,11 +52,19 @@ while( 1 ) {
     say "QUERY: |$query|";
 
     # if( $query =~ /^who is\s+(.*)\s+\?$/ ) {
-    if( $query =~ /^who is\s+(.*)\s*\?$/ ) {
-        $keyTerm = $1;
-        push @queryExpansion, qr/$keyTerm is ([^.])*\./i;
-        push @queryExpansion, qr/$keyTerm.*was ([^.]*)\./i;
-        push @queryExpansion, qr/(George Washington)/i;
+    if( $query =~ /^who (is|was)( the)? (.*)\?$/ ) {
+        $keyTerm = $3;
+        push @queryExpansion, qr/(((the $keyTerm)|($keyTerm|he|she)) (is|was)( the)? ([^.])*\.)/i;
+        # push @queryExpansion, qr/($keyTerm was [^.]*\.)/i;
+        # push @queryExpansion, qr/((He|She) was [^.]*\.)/;
+    }
+    elsif( $query =~ /^what (is|was)( the)? (.*)\?/) {
+        $keyTerm = $3;
+        push @queryExpansion, qr/(((the $keyTerm)|($keyTerm|it)) (is|was)( the)? ([^.])*\.)/i;
+    }
+    elsif( $query =~ /^when (is|was)( the)? (.*)\?/ ) {
+        $keyTerm = $3;
+        push @queryExpansion, qr/(((the $keyTerm)|($keyTerm|it)) (is|was) ([^.])*\.)/i;
     }
     else {
         say "I am sorry I don't know the answer.";
@@ -66,10 +76,23 @@ while( 1 ) {
 
     # Get Wikipedia document.
     my $result = $wiki->search( $keyTerm );
-    # Get text from document.
-    my $wikiText = $result->text();
+    # Get text from document. If no document found, return a default response.
+    my $wikiText = "";
+    if( $result && $result->text() ) {
+         $wikiText = $result->text();
+    }
+    else {
+        say "I could not find any information on $keyTerm.";
+        next;
+    }
     # Remove newline characters from wikitext, since WWW::Wikipedia adds extras for aesthetics.
-    $wikiText =~ s/\R/ /g;
+    $wikiText =~ s/\s+/ /g;
+    # Remove parthentsized sections, so that we have a more raw text to use, that will be more likely to follow predicted grammatical structures.
+    $wikiText =~ s/\([^()]*\)//g;
+    # Remove weird characters.
+    $wikiText =~ s/[{}'"]//g;
+    # Make spacing equal.
+    $wikiText =~ s/\s+/ /g;
 
     #TODO
     say "TEXT: |$wikiText|";
@@ -79,11 +102,12 @@ while( 1 ) {
 
     # Search for each expansion. Return the first match.
     for my $expansion (@queryExpansion) {
-        #TODO
         say "EXPANSION: |$expansion|";
         if( $wikiText =~ /$expansion/ ) {
             $capture = $1;
-            last;
+            #TODO uncomment below
+            # last;
+            say "LOG ANSWER: $capture";
         }
     }
 
