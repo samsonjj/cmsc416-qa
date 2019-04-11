@@ -51,20 +51,32 @@ while( 1 ) {
     #TODO
     say "QUERY: |$query|";
 
+    #Regex pieces.
+    my $is = "(is|was|are|were)";
+    my $the = "(a|the)";
+    my $tangent = "(,[^,]*,)";
+    my $it = "(they|it)";
+    my $he = "(he|she|they|them)";
+
     # if( $query =~ /^who is\s+(.*)\s+\?$/ ) {
-    if( $query =~ /^who (is|was)( the)? (.*)\?$/ ) {
+    if( $query =~ /^who ($is)( $the)? (.*)\?$/ ) {
         $keyTerm = $3;
-        push @queryExpansion, qr/(((the $keyTerm)|($keyTerm|he|she)) (is|was)( the)? ([^.])*\.)/i;
+        push @queryExpansion, qr/((($the $keyTerm)|($keyTerm|he|she))$tangent? $is( $the)? ([^.])*\.)/i;
         # push @queryExpansion, qr/($keyTerm was [^.]*\.)/i;
         # push @queryExpansion, qr/((He|She) was [^.]*\.)/;
     }
-    elsif( $query =~ /^what (is|was)( the)? (.*)\?/) {
-        $keyTerm = $3;
-        push @queryExpansion, qr/(((the $keyTerm)|($keyTerm|it)) (is|was)( the)? ([^.])*\.)/i;
+    elsif( $query =~ /^what $is( $the)? (.*)\?/i) {
+        $keyTerm = $4;
+        @queryExpansion[0] = "boopy";
+        @queryExpansion[1] = '"belch"';
+        @queryExpansion[2] = "((($the )?$keyTerm)$tangent?( $is( $the)? ([^.])*\\.))";
+        @queryExpansion[3] = '"$2$6"';
+        @queryExpansion[4] = ".*$it $is( $the)? ([^.])*\\..*";
+        @queryExpansion[5] = '"$1$5"';
     }
     elsif( $query =~ /^when (is|was)( the)? (.*)\?/ ) {
         $keyTerm = $3;
-        push @queryExpansion, qr/(((the $keyTerm)|($keyTerm|it)) (is|was) ([^.])*\.)/i;
+        push @queryExpansion, qr/(((the $keyTerm)|($keyTerm|it)) (is|was|are|were) ([^.])*\.)/i;
     }
     else {
         say "I am sorry I don't know the answer.";
@@ -101,16 +113,21 @@ while( 1 ) {
     my $capture = "";
 
     # Search for each expansion. Return the first match.
-    for my $expansion (@queryExpansion) {
-        say "EXPANSION: |$expansion|";
-        if( $wikiText =~ /$expansion/ ) {
+    my $expansionLength = scalar @queryExpansion;
+    for( my $i=0; $i<$expansionLength; $i=$i+2)  {
+        my $rule = $queryExpansion[$i];
+        my $sub = $queryExpansion[$i+1];
+        say "Rule: |$rule|";
+        say "Sub: |$sub|";
+        if( $wikiText =~ /$rule/i ) {
             $capture = $1;
+            $capture =~ s/$rule/$sub/eei;
             #TODO uncomment below
             # last;
             say "LOG ANSWER: $capture";
+            say "MATCH: $_";
         }
     }
-
     say "ANSWER: $capture";
 }
 
