@@ -1,0 +1,3 @@
+Use of uninitialized value $query in scalar chomp at qa-system.pl line 36, <STDIN> line 1.
+Use of uninitialized value $query in lc at qa-system.pl line 37, <STDIN> line 1.
+Terminating on signal SIGINT(2)

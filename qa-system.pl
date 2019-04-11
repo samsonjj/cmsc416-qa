@@ -4,20 +4,31 @@ use strict;
 use feature 'say';
 use WWW::Wikipedia;
 
+# Import wikipeida module.
 my $wiki = WWW::Wikipedia->new( clean_html => 1 );
+
+# Open log file.
+my $logFilename = "logfile.txt";
+open(my $logFh, '>', $logFilename)
+    or die "Could not open log file '$1' $!.";
+
+# Change error file to errorfile.txt, errors can be unavoidably caused during logging.
+# For example, wikipedia can include some wide characters, which perl then reports when printing.
+open(STDERR, '>', 'errorfile.log') or die "Can't open log";
 
 # Counts the number of main loops, i.e. the number of questions asked so far.
 my $questionCounter = 0;
 
 # Print intro line.
-say "*** This is a QA system by Jonathan Samson. It will try to answer questions that start with Who, What, When or Where. Enter \"exit\" to leave the program.";
+say "\n*** This is a QA system by Jonathan Samson. It will try to answer questions that start with Who, What, When or Where. Enter \"exit\" to leave the program.";
 
 # Main loop. Get query, expand query, search for queries, pick answer, parse answer, return answer.
 while( 1 ) {
 
-    print "QUESTION: ";
+    say "\nQA: Ask me a question.";
 
     # Read query from standard input.
+    print "USER: ";
     my $query = <STDIN>;
     $questionCounter++;
 
@@ -30,12 +41,12 @@ while( 1 ) {
 
     # If the query equals "exit", quit the program.
     if( $query eq "exit" ) {
-        return;
+        last;
     }
 
     # If the question does not begin with who, what, when, or where, return a default response.
     if( $query !~ /^(who|what|when|where)/ ) {
-        say "Please ask a question that begins with who, what, when or where.";
+        say "QA: Please ask a question that begins with who, what, when or where.";
         next;
     }
 
@@ -48,43 +59,64 @@ while( 1 ) {
 
     # Run a bunch of regex matches on the query. If matches, create query expansion.
 
-    #TODO
-    say "QUERY: |$query|";
+    print $logFh "\nQUERY: |$query|\n";
 
     #Regex pieces.
     my $is = "(is|was|are|were)";
     my $the = "(a|the)";
-    my $tangent = "(,[^,]*,)";
+    #my $tangent = "(,[^,.]*,|\([^.)]*\))";
+    my $tangent = "([^.]*)";
     my $it = "(they|it)";
-    my $he = "(he|she|they|them)";
+    my $he = "(he|she|they)";
+    my $him = "(him|her|them)";
+    my $word = "(\\w+)";
+    my $happened = "(happens|occurs|takes place|happened|occured|took place)";
+    my $when = "(when|during|after|before|between|on|at)";
+    my $isAt = "(is located at|is found at|can be found at|is in|is at|was at|was in|is at the address)";
 
-    # if( $query =~ /^who is\s+(.*)\s+\?$/ ) {
-    if( $query =~ /^who ($is)( $the)? (.*)\?$/ ) {
-        $keyTerm = $3;
-        push @queryExpansion, qr/((($the $keyTerm)|($keyTerm|he|she))$tangent? $is( $the)? ([^.])*\.)/i;
-        # push @queryExpansion, qr/($keyTerm was [^.]*\.)/i;
-        # push @queryExpansion, qr/((He|She) was [^.]*\.)/;
+    if( $query =~ /^who $is( $the)? (.*)\?$/i ) {
+        $keyTerm = $4;
+        @queryExpansion[0] = "((($the )?$keyTerm)$tangent( $is( $the)? ([^.])*\\.))";
+        @queryExpansion[1] = '"$2$6"';
+        @queryExpansion[0] = "((($the )?$keyTerm)$tangent?(([^.])*\\.))";
+        @queryExpansion[1] = '"$2$6"';
+    }
+    elsif( $query =~ /^who $word ($the )?(.*)\?$/i ) {
+        $keyTerm = $4;
+        my $actionVerb = $1;
+        print $logFh "ACTION VERB: |$actionVerb|\n";
+        @queryExpansion[0] = "((($word ){1,5})$actionVerb ($the )?$keyTerm)";
+        @queryExpansion[1] = '"$1."';
+        @queryExpansion[2] = "((($word ){1,5})$actionVerb($him|$it))";
+        @queryExpansion[3] = '"$1."';
+        @queryExpansion[4] = "($keyTerm was $actionVerb by ($word){1,5})";
+        @queryExpansion[5] = '"$1."';
     }
     elsif( $query =~ /^what $is( $the)? (.*)\?/i) {
         $keyTerm = $4;
-        @queryExpansion[0] = "boopy";
-        @queryExpansion[1] = '"belch"';
-        @queryExpansion[2] = "((($the )?$keyTerm)$tangent?( $is( $the)? ([^.])*\\.))";
-        @queryExpansion[3] = '"$2$6"';
-        @queryExpansion[4] = ".*$it $is( $the)? ([^.])*\\..*";
-        @queryExpansion[5] = '"$1$5"';
+        @queryExpansion[0] = "((($the )?$keyTerm)$tangent?( $is( $the)? ([^.])*\\.))";
+        @queryExpansion[1] = '"$2$6"';
+        @queryExpansion[2] = "($it $is( $the)? ([^.])*\\.)";
+        @queryExpansion[3] = '"$1"';
     }
-    elsif( $query =~ /^when (is|was)( the)? (.*)\?/ ) {
-        $keyTerm = $3;
-        push @queryExpansion, qr/(((the $keyTerm)|($keyTerm|it)) (is|was|are|were) ([^.])*\.)/i;
+    elsif( $query =~ /^when $is( $the)? (.*)\?/i ) {
+        $keyTerm = $4;
+        @queryExpansion[0] = "(($the )?$keyTerm $tangent($is |$happened )?($when)([^.]*)\\.)";
+        @queryExpansion[1] = '"$1"';
+        @queryExpansion[2] = "(($happened)([^.]*)\\.)";
+        @queryExpansion[3] = $keyTerm.'" $1"';
+    }
+    elsif( $query =~ /^where $is( $the)? (.*)\?/i ) {
+        $keyTerm = $4;
+        @queryExpansion[0] = "(($the )?$keyTerm $tangent($isAt)([^.*)\\.)";
+        @queryExpansion[1] = "$1";
     }
     else {
         say "I am sorry I don't know the answer.";
         next;
     }
 
-    # TODO
-    say "KEYTERM: |$keyTerm|";
+    print $logFh "KEYTERM: |$keyTerm|\n";
 
     # Get Wikipedia document.
     my $result = $wiki->search( $keyTerm );
@@ -94,7 +126,7 @@ while( 1 ) {
          $wikiText = $result->text();
     }
     else {
-        say "I could not find any information on $keyTerm.";
+        say "QA: I could not find any information on $keyTerm.";
         next;
     }
     # Remove newline characters from wikitext, since WWW::Wikipedia adds extras for aesthetics.
@@ -106,30 +138,41 @@ while( 1 ) {
     # Make spacing equal.
     $wikiText =~ s/\s+/ /g;
 
-    #TODO
-    say "TEXT: |$wikiText|";
+    print $logFh "TEXT: |$wikiText|\n";
 
     # Stores the captured text, which matched the expansion.
     my $capture = "";
+
+    # Store first answer found.
+    my $firstAnswer = "";
 
     # Search for each expansion. Return the first match.
     my $expansionLength = scalar @queryExpansion;
     for( my $i=0; $i<$expansionLength; $i=$i+2)  {
         my $rule = $queryExpansion[$i];
         my $sub = $queryExpansion[$i+1];
-        say "Rule: |$rule|";
-        say "Sub: |$sub|";
+        print $logFh "Rule: |$rule|\n";
+        print $logFh "Sub: |$sub|\n";
         if( $wikiText =~ /$rule/i ) {
             $capture = $1;
             $capture =~ s/$rule/$sub/eei;
             #TODO uncomment below
             # last;
-            say "LOG ANSWER: $capture";
-            say "MATCH: $_";
+            if( $firstAnswer eq "") {
+                $firstAnswer = $capture;
+            }
+            print $logFh "LOG ANSWER: $capture\n";
         }
     }
-    say "ANSWER: $capture";
+    if( $firstAnswer ne "" ) {
+        say "QA: $firstAnswer";
+    }
+    else {
+        say "QA: I do not know the answer.";
+    }
 }
+
+close($logFh);
 
 ## search for 'perl' 
 # my $result = $wiki->search( 'perl' );
