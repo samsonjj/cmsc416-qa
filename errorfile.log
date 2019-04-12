@@ -1,4 +1,3 @@
-Wide character in print at qa-system.pl line 147.
-Use of uninitialized value $query in scalar chomp at qa-system.pl line 36, <STDIN> line 1.
-Use of uninitialized value $query in lc at qa-system.pl line 37, <STDIN> line 1.
-Terminating on signal SIGINT(2)
+Wide character in print at qa-system.pl line 203.
+Wide character in print at qa-system.pl line 203, <STDIN> line 2.
+Wide character in print at qa-system.pl line 203, <STDIN> line 3.
