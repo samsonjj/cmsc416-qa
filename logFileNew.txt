@@ -332,3 +332,1947 @@ LOG ANSWER: Budapest is in Hungary, and the tenth-largest city in the European U
 Rule: |((budapest)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
 Sub: |"$2$4"|
 LOG ANSWER: Budapest is the capital and the most populous city of Hungary, and the tenth-largest city in the European Union by population within city limits
+
+QUERY: |who is elon musk?|
+KEYTERM: elon musk
+WIKI TEXT: 
+
+
+
+
+{{Infobox person
+| name = Elon Musk honorific_suffix = image = File:Elon Musk Royal Society.jpg
+| alt = Musk at the Royal Society admissions day in London, July 2018 caption =
+| Musk at the Royal Society admissions day in London, July 2018 birth_name =
+| Elon Reeve Musk birth_date = birth_place = Pretoria, Transvaal, South Africa
+| residence = Bel Air, Los Angeles, California, United States citizenship =
+| {{Plainlist|
+* South Africa (1971–present)
+* Canada (1989–present)
+* United States (2002–present) }}
+| alma mater = {{plainlist|
+* Queen's University
+* University of Pennsylvania}}
+| occupation = known_for = networth = US$21.4&nbsp;billion (March 2019) title =
+| {{plainlist|
+* Founder, CEO, Lead Designer of SpaceX
+* CEO, Product Architect of Tesla, Inc.
+* Co-founder, CEO of Neuralink
+* Founder of The Boring Company
+* Co-founder of Zip2
+* Founder of X.com (later became PayPal)
+* Co-founder of OpenAI
+* Chairman of SolarCity }}
+| years_active = 1995–present awards = Fellow of the Royal Society party =
+| Independent spouse = {{Plainlist|
+*
+*   ( 2013; 2016) }}
+| partner = {{Plainlist|
+* Amber Heard (2016–2018)
+* Grimes (2018–present) }}
+| children = 6 (1 deceased) parents = {{plainlist|
+* Maye Musk (mother)
+* Errol Musk (father) }}
+| relatives = {{plainlist|
+* Kimbal Musk (brother)
+* Tosca Musk (sister)
+* Lyndon Rive (cousin)}}
+| signature = Elon Musk Signature.svg signature_alt = Elon Musk
+}}
+
+'Elon Reeve Musk' (; born June 28, 1971) is a technology entrepreneur,
+investor, and engineer. He holds South African, Canadian, and U.S. citizenship
+and is the founder, CEO, and lead designer of SpaceX; co-founder, CEO, and
+product architect of Tesla, Inc.; Tesla|website=www.tesla.com|access-date=2018-09-
+07}} co-founder and CEO of Neuralink; founder of The Boring Company; co-founder
+and co-chairman of OpenAI; and co-founder of PayPal. In December 2016, he was
+ranked 21st on the [[Forbes]] list of The World's Most Powerful People. he has
+a net worth of $22.8 billion and is listed by Forbes as the 54th-richest person
+in the world.
+
+Born and raised in Pretoria, South Africa, Musk moved to Canada when he was 17
+to attend Queen's University. He transferred to the University of Pennsylvania
+two years later, where he received an economics degree from the Wharton School
+and a degree in physics from the College of Arts and Sciences. He began a Ph.D.
+in applied physics and material sciences at Stanford University in 1995 but
+dropped out after two days to pursue an entrepreneurial career. He subsequently
+co-founded Zip2, a web software company, which was acquired by Compaq for $340
+million in 1999. Musk then founded X.com, an online bank. It merged with
+Confinity in 2000 and later that year became PayPal, which was bought by eBay
+for $1.5 billion in October 2002.
+
+In May 2002, Musk founded SpaceX, an aerospace manufacturer and space transport
+services company, of which he is CEO and lead designer. He helped fund Tesla,
+Inc., an electric vehicle and solar panel manufacturer, in 2003, and became its
+CEO and product architect. In 2006, he inspired the creation of SolarCity, a
+solar energy services company that is now a subsidiary of Tesla, and operates as
+its chairman. In 2015, Musk co-founded OpenAI, a nonprofit research company that
+aims to promote friendly artificial intelligence. In July 2016, he co-founded
+Neuralink, a neurotechnology company focused on developing brain–computer
+interfaces, and is its CEO. In December 2016, Musk founded The Boring Company,
+an infrastructure and tunnel-construction company.
+
+In addition to his primary business pursuits, Musk has envisioned a high-speed
+transportation system known as the Hyperloop, and has proposed a vertical take-
+off and landing supersonic jet electric aircraft with electric fan propulsion,
+known as the Musk electric jet. Musk has stated that the goals of SpaceX, Tesla,
+and SolarCity revolve around his vision to change the world and humanity. His
+goals include reducing global warming through sustainable energy production and
+consumption, and reducing the risk of human extinction by establishing a human
+colony on Mars.
+
+Rule: |((((a|an|the) )?elon([\w+ ]*)musk)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$7"|
+LOG ANSWER: Elon Musk Elon Reeve Musk is a technology entrepreneur, investor, and engineer.
+Rule: |((((a|an|the) )?elon([\w+ ]*)musk)([^.]*)?(([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: Elon Musk honorific_suffix = image = File:Elon Musk Royal Society
+
+QUERY: |who is spongebob?|
+KEYTERM: spongebob
+WIKI TEXT: 
+
+
+
+
+{{Infobox television
+| show_name = SpongeBob SquarePants image = SpongeBob SquarePants logo.svg genre
+| = Comedy creator = Stephen Hillenburg developer = {{Plainlist|
+* Derek Drymon
+* Tim Hill
+* Nick Jennings }}
+| creative_director = {{Plainlist|
+* Derek Drymon (1999–2004)
+* Vincent Waller (2005–15) }}
+| voices = {{Plainlist|
+* Tom Kenny
+* Bill Fagerbakke
+* Rodger Bumpass
+* Clancy Brown
+* Mr. Lawrence
+* Jill Talley
+* Carolyn Lawrence
+* Mary Jo Catlett
+* Lori Alan
+* (Complete list) }}
+| narrated = Tom Kenny (various episodes) theme_music_composer = Derek
+| DrymonMark HarrisonStephen HillenburgBlaise Smith opentheme = "SpongeBob
+| SquarePants Theme", performed by Patrick Pinney endtheme = "SpongeBob Closing
+| Theme", composed by Steve Belfer composer = Steve BelferNicolas CarrSage
+| GuytonJeremy WakefieldBrad Carow (1999–2002)The Blue Hawaiians (1999–2002)Eban
+| Schletter (2000–present)Barry Anthony Trop (2006–13) country = United States
+| language = English num_seasons = 12 num_episodes = 244 list_episodes = List of
+| SpongeBob SquarePants episodes executive_producer = {{Plainlist|
+* Stephen Hillenburg (1999–2018)
+* Paul Tibbitt (2008–17)
+* 'Co-Executive Producers:'
+* Paul Tibbitt (2006–08)
+* Marc Ceccarelli (2018–present)
+* Vincent Waller (2018–present) }}
+| producer = {{Plainlist|
+* Donna Castricone (1999–2002)
+* Helen Kafatic (2002–04)
+* Anne Michaud (2001)
+* Dina Buteyn (2005–10)
+* Jennie Monica Hammond (2010–present)
+* 'Supervising Producers:'
+* Derek Drymon (2002–04)
+* Paul Tibbitt (2005–15)
+* Marc Ceccarelli (2015–2018)
+* Vincent Waller (2015–2018) }}
+| runtime = 11 minutes (regular episodes only)22 minutes (special episodes only)
+| company = {{Plainlist|
+* United Plankton Pictures
+* Nickelodeon Animation Studios }}
+| distributor = Viacom Media Networks network = Nickelodeon}} picture_format =
+| {{Plainlist|
+* NTSC (480i) (1999–2012)
+* HDTV 1080i (2009, 2012–present) }}
+| audio_format = {{Plainlist|
+* Stereo (1999–2012)
+* Dolby Surround 5.1 (2009, 2012–present) }}
+| first_aired = last_aired = related = [[Rocko's Modern Life]] website = https://www.nick.com/shows/spongebob-
+| squarepants image_size = 250
+}} 'SpongeBob SquarePants' is an American animated television series created by
+marine science educator and animator Stephen Hillenburg for Nickelodeon. The
+series chronicles the adventures and endeavors of the title character and his
+various friends in the fictional underwater city of Bikini Bottom. The series'
+popularity has made it a media franchise, as well as the highest rated series to
+ever air on Nickelodeon, and the most distributed property of MTV Networks. As
+of late 2017, the media franchise has generated $13 billion in merchandising
+revenue for Nickelodeon.
+
+Many of the ideas for the series originated in an unpublished educational comic
+book titled The Intertidal Zone, which Hillenburg created in 1989. He began
+developing SpongeBob SquarePants into a television series in 1996 upon the
+cancellation of [[Rocko's Modern Life]], and turned to Tom Kenny, who had worked
+with him on that series, to voice the title character. SpongeBob was originally
+going to be named SpongeBoy, and the series was to be called SpongeBoy Ahoy!,
+but both of these were changed, as the name was already trademarked.
+
+Nickelodeon held a preview for the series in the United States on May 1, 1999,
+following the television airing of the 1999 Kids' Choice Awards. The series
+officially premiered on July 17, 1999. It has received worldwide critical
+acclaim since its premiere and gained enormous popularity by its second season.
+A feature film, [[The SpongeBob SquarePants Movie]], was released in theaters on
+November 19, 2004, and was released on February 6, 2015. In 2018, the series
+began airing its twelfth season.
+
+The series has won a variety of awards, including six Annie Awards, eight
+Golden Reel Awards, four Emmy Awards, 16 Kids' Choice Awards, and two BAFTA
+Children's Awards. Despite its widespread popularity, the series has been
+involved in several public controversies, including one centered on speculation
+over SpongeBob's intended sexual orientation. In 2011, a newly described
+species of fungus, [[Spongiforma squarepantsii]], was named after the cartoon's
+title character. A Broadway musical based on the series opened in 2017 to
+critical acclaim.
+
+On February 14, 2019, it was announced that a SpongeBob SquarePants spin-off is
+in development.
+
+Rule: |((((a|an|the) )?spongebob)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$7"|
+LOG ANSWER: spongebobis
+Rule: |((((a|an|the) )?spongebob)([^.]*)?(([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: SpongeBob.
+
+QUERY: |who is bismark the third|
+
+QUERY: |who is the king of england?|
+KEYTERM: king of england
+WIKI TEXT: 
+
+
+
+, 1399–1603]] This list of kings and queens of the Kingdom of England begins
+with Alfred the Great, who initially ruled Wessex, one of the seven Anglo-Saxon
+kingdoms which later made up modern England. Alfred styled himself King of the
+Anglo-Saxons from about 886, and while he was not the first king to claim to
+rule all of the English, his rule represents the start of the first unbroken
+line of kings to rule the whole of England, the House of Wessex. petty kingdoms
+to be unified as the early Kingdom of England]]
+
+Arguments are made for a few different kings deemed to control enough Anglo-
+Saxon kingdoms to be deemed the first king of England. For example, Offa of
+Mercia and Egbert of Wessex are sometimes described as kings of England by
+popular writers, but it is no longer the majority view of historians that their
+wide dominions are part of a process leading to a unified England. Historian
+Simon Keynes states, for example, that "Offa was driven by a lust for power, not
+a vision of English unity; and what he left was a reputation, not a legacy."
+This refers to a period in the late 8th century when Offa achieved a dominance
+over many of the kingdoms of southern England, but this did not survive his
+death in 796.
+
+In 829 Egbert of Wessex conquered Mercia, but he soon lost control of it. It was
+not until the late 9th century that one kingdom, Wessex, had become the dominant
+Anglo-Saxon kingdom. Its king, Alfred the Great, was overlord of western Mercia
+and used the title King of the Angles and Saxons, but he never ruled eastern and
+northern England, which was then known as the Danelaw, having earlier been
+conquered by the Danes from Scandinavia. His son Edward the Elder conquered the
+eastern Danelaw, but Edward's son Æthelstan became the first king to rule the
+whole of England when he conquered Northumbria in 927, and he is regarded by
+some modern historians as the first true king of England. The title "King of the
+English" or Rex Anglorum in Latin, was first used to describe Æthelstan in one
+of his charters in 928.
+
+The Principality of Wales was incorporated into the Kingdom of England under the
+Statute of Rhuddlan in 1284, and in 1301 King Edward I invested his eldest son,
+the future King Edward II, as Prince of Wales. Since that time, except for King
+Edward III, the eldest sons of all English monarchs have borne this title.
+
+After the death of Queen Elizabeth I without issue, in 1603, King James VI
+of Scotland also became James I of England, joining the crowns of England
+and Scotland in personal union. By royal proclamation, James styled himself
+"King of Great Britain", but no such kingdom was actually created until
+1707, when England and Scotland united to form the new Kingdom of Great
+Britain, with a single British parliament sitting at Westminster, during the
+reign of Queen Anne.
+
+Rule: |((((a|an|the) )?king([\w+ ]*)of england)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$7"|
+LOG ANSWER: kingdoms to be unified as the early Kingdom of England are made for a few different kings deemed to control enough Anglo- Saxon kingdoms to be deemed the first king of England.
+Rule: |((((a|an|the) )?king([\w+ ]*)of england)([^.]*)?(([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: kings and queens of the Kingdom of England begins with Alfred the Great, who initially ruled Wessex, one of the seven Anglo-Saxon kingdoms which later made up modern England
+
+QUERY: |who is oprah winfrey?|
+KEYTERM: oprah winfrey
+WIKI TEXT: 
+
+
+
+
+
+{{Infobox person |name = Oprah Winfrey |image = Oprah in 2014.jpg |alt =
+|image_size = |caption = Winfrey in October 2014 |birth_name = Orpah Gail
+Winfrey |birth_date = |birth_place = Kosciusko, Mississippi, U.S. |death =
+|alma_mater = Tennessee State University |occupation =
+* Host of [[The Oprah Winfrey Show]] (1986–2011)
+* Chairwoman and CEO of Harpo Productions (1986–present)
+* Chairwoman, CEO and CCO of the Oprah Winfrey Network (2011–present)
+* Actress
+* Author |net_worth = US$2.6 billion (January 2019) |salary = $75 million (2013)
+  |party = Independent |residence = Montecito, CaliforniaLavallette, New
+  JerseyTelluride, ColoradoMaui, HawaiiChicago, IllinoisFisher Island, Florida
+  |years active = 1971–present |website = |partner = Stedman Graham
+  (1986–present) |children = Canaan (born c. 1968, died c. 1968) |signature =
+  Oprah Winfrey Signature.svg }}
+
+'Oprah Winfrey' (born 'Orpah Gail Winfrey'; January 29, 1954) is an American
+media executive, actress, talk show host, television producer and
+philanthropist. She is best known for her talk show [[The Oprah Winfrey Show]],
+which was the highest-rated television program of its kind in history and was
+nationally syndicated from 1986 to 2011 in Chicago. Dubbed the "Queen of All
+Media", she was the richest African American of the 20th century and North
+America's first black multi-billionaire, and has been ranked the greatest black
+philanthropist in American history. She has also been sometimes ranked as the
+most influential woman in the world.
+
+Winfrey was born into poverty in rural Mississippi to a teenage single mother
+and later raised in inner-city Milwaukee. She has stated that she was molested
+during her childhood and early teens and became pregnant at 14; her son was born
+prematurely and died in infancy. Winfrey was then sent to live with the man she
+calls her father, Vernon Winfrey, a barber in Tennessee, and landed a job in
+radio while still in high school. By 19, she was a co-anchor for the local
+evening news. Winfrey's often emotional, extemporaneous delivery eventually led
+to her transfer to the daytime talk show arena, and after boosting a third-rated
+local Chicago talk show to first place, she launched her own production company
+and became internationally syndicated.
+
+Credited with creating a more intimate confessional form of media communication,
+Winfrey popularized and revolutionized the tabloid talk show genre pioneered by
+Phil Donahue. Through this medium, Winfrey broke 20th-century taboos and allowed
+LGBT people to enter the mainstream through television appearances. In 1994, she
+was inducted into the National Women's Hall of Fame.
+
+By the mid-1990s, Winfrey had reinvented her show with a focus on literature,
+self-improvement, mindfulness and spirituality. Though she was criticized for
+unleashing a confession culture, promoting controversial self-help ideas, and
+having an emotion-centered approach, she has also been praised for overcoming
+adversity to become a benefactor to others. Winfrey had also emerged as a
+political force in the 2008 presidential race, delivering about one million
+votes to Barack Obama in the razor close 2008 Democratic primary. In 2013,
+Winfrey was awarded the Presidential Medal of Freedom by President Obama and
+honorary doctorate degrees from Duke and Harvard. In 2008, she formed her own
+network, Oprah Winfrey Network.
+
+Rule: |((((a|an|the) )?oprah([\w+ ]*)winfrey)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$7"|
+LOG ANSWER: Oprah Winfrey is an American media executive, actress, talk show host, television producer and philanthropist.
+Rule: |((((a|an|the) )?oprah([\w+ ]*)winfrey)([^.]*)?(([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: Oprah Winfrey |image = Oprah in 2014
+
+QUERY: |where is central park?|
+KEYTERM: central park
+WIKI TEXT: 
+
+
+{{Infobox park
+| name = Central Park photo = Southwest corner of Central Park, looking east,
+| NYC.jpg photo_width = 300px photo_caption = The Pond and Hallett Nature
+| Sanctuary in the park's southeast corner type = Urban park location =
+| Manhattan, New York City area = map_image = map_width = map_caption =
+| Interactive map showing location of Central Park coords = created = 1857 owner
+| = New York City Department of Parks and Recreation operator = Central Park
+| Conservancy visitation_num = about 37.5 million annually
+
+
+| status = Open all year embedded = {{Infobox NRHP embed = yes name = nrhp_type
+| = nhl image = built = architect = Frederick Law Olmsted (1822–1903), Calvert
+| Vaux (1824–1895) designated_nrhp_type = May 23, 1963 area = added = October
+| 15, 1966 refnum = 66000538
+ }} }}
+
+'Central Park' is an urban park in Manhattan, New York City. It is located
+between the Upper West Side and Upper East Side, roughly bounded by Fifth
+Avenue on the east, Central Park West (Eighth Avenue) on the west, Central Park
+South (59th Street) on the south, and Central Park North (110th Street) on the
+north. Central Park is the most visited urban park in the United States, with
+40 million visitors in 2013, and one of the most filmed locations in the world.
+In terms of area, Central Park is the fifth largest park in New York City,
+covering .
+
+Central Park was first approved in 1853 as a . In 1857, landscape architect
+Frederick Law Olmsted and architect/landscape designer Calvert Vaux won a design
+competition to construct the park with a plan they titled the "Greensward Plan".
+Construction began the same year, and the park's first areas were opened to the
+public in late 1858. Additional land at the northern end of Central Park was
+purchased in 1859, and the park was completed in 1873. After a period of decline
+in the early 20th century, New York City parks commissioner Robert Moses started
+a program to clean up Central Park. Another decline in the late 20th century
+spurred the creation of the Central Park Conservancy in 1980, which refurbished
+many parts of the park during the 1980s and 1990s.
+
+Central Park was designated a National Historic Landmark by the U.S. Department
+of the Interior in 1963,https://npgallery.nps.gov/AssetDetail/NRIS/66000538 and
+it was placed on the tentative list for UNESCO World Heritage sites in April
+2017.[http://whc.unesco.org/en/tentativelists/6234/ Central Park], UNESCO
+tentative list The park, managed for decades by the New York City Department of
+Parks and Recreation, is currently managed by the Central Park Conservancy under
+contract with the municipal government in a public-private partnership. The
+Conservancy is a non-profit organization that contributes 75 percent of Central
+Park's $65 million annual budget and is responsible for all basic care of the
+843-acre park.
+
+Rule: |(((a|an|the) )?central park ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((central park)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((central park)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: Central Park is an urban park in Manhattan, New York City
+
+QUERY: |what is a bicycle?|
+KEYTERM: bicycle
+WIKI TEXT: 
+
+
+ of any kind in the world—is the Chinese Flying Pigeon, with about 500 million
+ produced. ]]
+
+
+A 'bicycle', also called a 'cycle' or 'bike', is a human-powered or motor-
+powered, pedal-driven, single-track vehicle, having two wheels attached to a
+frame, one behind the other. A is called a cyclist, or bicyclist.
+
+Bicycles were introduced in the late 19th century in Europe, and by the early
+21st century, more than 1 billion were in existence at a given time. These
+numbers far exceed the number of cars, both in total and ranked by the number of
+individual models produced. They are the principal means of transportation in
+many regions. They also provide a popular form of recreation, and have been
+adapted for use as children's toys, general fitness, military and police
+applications, courier services, bicycle racing and bicycle stunts.
+
+The basic shape and configuration of a typical upright or "safety bicycle", has
+changed little since the first chain-driven model was developed around 1885.
+However, many details have been improved, especially since the advent of modern
+materials and computer-aided design. These have allowed for a proliferation of
+specialized designs for many types of cycling.
+
+The bicycle's invention has had an enormous effect on society, both in terms of
+culture and of advancing modern industrial methods. Several components that
+eventually played a key role in the development of the automobile were initially
+invented for use in the bicycle, including ball bearings, pneumatic tires, chain-
+driven sprockets and tension-spoked wheels.Heitmann JA. The Automobile and
+American Life. McFarland, 2009, , pp. 11ff
+
+Rule: |((((a|an|the) )?bicycle)([^.]*)?( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: A bicycle is a human-powered or motor- powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other.
+Rule: |((they|it) (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.)|
+Sub: |"$1"|
+LOG ANSWER: They are the principal means of transportation in many regions.
+
+QUERY: |what is chemical engineering?|
+KEYTERM: chemical engineering
+WIKI TEXT: s pictured)]]
+
+'Chemical engineering' is a branch of engineering that uses principles of
+chemistry, physics, mathematics, biology, and economics to efficiently use,
+produce, transform, and transport chemicals, materials, and energy. A chemical
+engineer designs large-scale processes that convert chemicals, raw materials,
+living cells, microorganisms, and energy into useful forms and products.
+
+Chemical engineers are involved in many aspects of plant design and operation,
+including safety and hazard assessments, process design and analysis, control
+engineering, chemical reaction engineering, biological engineering, construction
+specification, and operating instructions. Chemical engineering degree is
+directly linked with all the majors of various engineering disciplines.
+
+Rule: |((((a|an|the) )?chemical engineering)([^.]*)?( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: Chemical engineering is a branch of engineering that uses principles of chemistry, physics, mathematics, biology, and economics to efficiently use, produce, transform, and transport chemicals, materials, and energy.
+Rule: |((they|it) (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.)|
+Sub: |"$1"|
+
+QUERY: |what is summer?|
+KEYTERM: summer
+WIKI TEXT: 
+
+
+
+]]
+
+
+'Summer' is the hottest of the four temperate seasons, falling after spring and
+before autumn. At the summer solstice, the days are longest and the nights are
+shortest, with day length decreasing as the season progresses after the
+solstice. The date of the beginning of summer varies according to climate,
+tradition, and culture. When it is summer in the Northern Hemisphere, it is
+winter in the Southern Hemisphere, and vice versa.
+
+Rule: |((((a|an|the) )?summer)([^.]*)?( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: Summer is the hottest of the four temperate seasons, falling after spring and before autumn.
+Rule: |((they|it) (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.)|
+Sub: |"$1"|
+LOG ANSWER: it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa.
+
+QUERY: |when is christmas?|
+KEYTERM: christmas
+WIKI TEXT: 
+
+
+
+
+{{Infobox holiday
+| holiday_name = ChristmasChristmas Day image = Worship of the shepherds by
+| bronzino.jpg caption = A depiction of the Nativity scene nickname = Noël,
+| Nativity, Xmas observedby = Christians, many non-Christians date = {{blist|
+| December 25: Western Christianity and some Eastern churches
+| : Most Oriental Orthodox and Eastern Orthodox churches
+| January 6: Some Anabaptists, such as the Amish; Armenian Apostolic Church
+| : Armenian Patriarchate of Jerusalem''
+}}
+| observances = Church services celebrations = Gift-giving, family and other
+| social gatherings, symbolic decoration, feasting etc. type = Christian,
+| cultural significance = Commemoration of the Nativity of Jesus relatedto =
+| Christmastide, Christmas Eve, Advent, Annunciation, Epiphany, Baptism of the
+| Lord, Nativity Fast, Nativity of Christ, Old Christmas, Yule, St. Stephen's
+| Day, Boxing Day frequency = Annual duration = 1 day
+}}
+
+
+'Christmas' is an annual festival, commemorating the birth of Jesus Christ,[http://www.merriam-
+webster.com/dictionary/christmas Christmas], [[Merriam-Webster]]. Retrieved 2008-10-
+06.[https://www.webcitation.org/5kwKlFgsB?url=http://encarta.msn.com/encnet/ref-
+pages/RefArticle.aspx?refid=761556859 Archived] 2009-10-31. observed primarily
+on December 25 Several branches of Eastern Christianity that use the Julian
+calendar also celebrate on December 25 according to that calendar, which is now
+January 7 on the Gregorian calendar. Armenian Churches observed the nativity on
+January 6 even before the Gregorian calendar originated. Most Armenian
+Christians use the Gregorian calendar, still celebrating Christmas Day on
+January 6. Some Armenian churches use the Julian calendar, thus celebrating
+Christmas Day on January 19 on the Gregorian calendar, with January 18 being
+Christmas Eve. as a religious and cultural celebration among billions of people
+around the world. Christians|publisher = Pew Research Center|date = December 18,
+2012|accessdate = May 23, 2014}} A feast central to the Christian liturgical
+year, it is preceded by the season of Advent or the Nativity Fast and initiates
+the season of Christmastide, which historically in the West lasts twelve days
+and culminates on Twelfth Night; in some traditions, Christmastide includes an
+octave. Christmas Day is a public holiday in many of the world's nations,[http://www.pch.gc.ca/pgm/ceem-cced/jfa-ha/index-
+eng.cfm Canadian Heritage – Public holidays] – Government of Canada. Retrieved
+November 27, 2009.[http://www.opm.gov/Operating_Status_Schedules/fedhol/2009.asp
+2009 Federal Holidays] – U.S. Office of Personnel Management. Retrieved November
+27, 2009.[http://www.direct.gov.uk/en/Governmentcitizensandrights/LivingintheUK-
+/DG_073741 Bank holidays and British Summer time] – HM Government. Retrieved
+November 27, 2009. is celebrated religiously by a majority of Christians, as
+well as culturally by many non-Christians,Nick Hytrek, [http://www.siouxcityjournal.com/lifestyles/leisure/article_9914761e-ce50-11de-
+98cf-001cc4c03286.html "Non-Christians focus on secular side of Christmas"],
+Sioux City Journal, November 10, 2009. Retrieved November 18, 2009. and forms an
+integral part of the holiday season centered around it.
+
+The traditional Christmas narrative, the Nativity of Jesus, delineated in the
+New Testament says that Jesus was born in Bethlehem, in accordance with
+messianic prophecies. When Joseph and Mary arrived in the city, the inn had no
+room and so they were offered a stable where the Christ Child was soon born,
+with angels proclaiming this news to shepherds who then further disseminated the
+information.
+
+Although the month and date of Jesus' birth are unknown, the church in the early
+fourth century fixed the date as December 25.Corinna Laughlin, Michael R.
+Prendergast, Robert C. Rabe, Corinna Laughlin, Jill Maria Murdy, Therese Brown,
+Mary Patricia Storms, Ann E. Degenhard, Jill Maria Murdy, Ann E. Degenhard,
+Therese Brown, Robert C. Rabe, Mary Patricia Storms, Michael R. Prendergast, [h-
+ttps://books.google.com/books/about/Sourcebook_for_Sundays_Seasons_and_Weekd.ht-
+ml?id=kQWbWCXMGQgC Sourcebook for Sundays, Seasons, and Weekdays 2011: The
+Almanac for Pastoral Liturgy], LiturgyTrainingPublications, 2010, p. 29.[http:/-
+/www.tertullian.org/fathers/chronography_of_354_12_depositions_martyrs.htm "The
+Chronography of 354 AD. Part 12: Commemorations of the Martyrs"], The Tertullian
+Project. 2006. Retrieved November 24, 2011. This corresponds to the date of the
+solstice on the Roman calendar. Most Christians celebrate on December 25 in the
+Gregorian calendar, which has been adopted almost universally in the civil
+calendars used in countries throughout the world. However, some Eastern
+Christian Churches celebrate Christmas on December 25 of the older Julian
+calendar, which currently corresponds to a January date in the Gregorian
+calendar. For Christians, the belief that God came into the world in the form of
+man to atone for the sins of humanity, rather than the exact birth date, is
+considered to be the primary purpose in celebrating Christmas.
+
+The celebratory customs associated in various countries with Christmas have a
+mix of , Christian, and secular themes and origins. Popular modern customs of
+the holiday include gift giving, completing an Advent calendar or Advent wreath,
+Christmas music and caroling, lighting a Christingle, viewing a Nativity play,
+an exchange of Christmas cards, church services, a special meal, pulling
+Christmas crackers and the display of various Christmas decorations, including
+Christmas trees, Christmas lights, nativity scenes, garlands, wreaths,
+mistletoe, and holly. In addition, several closely related and often
+interchangeable figures, known as Santa Claus, Father Christmas, Saint Nicholas,
+and Christkind, are associated with bringing gifts to children during the
+Christmas season and have their own body of traditions and lore. Because gift-
+giving and many other aspects of the Christmas festival involve heightened
+economic activity, the holiday has become a significant event and a key sales
+period for retailers and businesses. The economic impact of Christmas has grown
+steadily over the past few centuries in many regions of the world.
+
+Rule: |(((a|an|the) )?christmas([^.]*) (happens|occurs|takes place|happened|occured|took place|begins|begin|beginning) ((when|during|after|before|between|on|at) )?([^.]*)\.)|
+Sub: |"$1"|
+Rule: |(((happens|occurs|takes place|happened|occured|took place|begins|begin|beginning))([^.]*)\.)|
+Sub: |christmas" $1"|
+Rule: |((christmas)[^.]*((is|was|are|were|happens|occurs|takes place|happened|occured|took place))[^.]*((when|during|after|before|between|on|at))( \w+ \d+(, \d+)?))|
+Sub: |"$2 $3 $5$7"|
+LOG ANSWER: Christmas is on December 25
+Rule: |(christmas (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*)|
+Sub: |"$1"|
+LOG ANSWER: Christmas is an annual festival, commemorating the birth of Jesus Christ,,  observed primarily on December 25 Several branches of Eastern Christianity that use the Julian calendar also celebrate on December 25 according to that calendar, which is now January 7 on the Gregorian calendar
+
+QUERY: |when is a leap year?|
+KEYTERM: leap year
+WIKI TEXT: 
+A 'leap year' (also known as an 'intercalary year' or 'bissextile year') is a
+calendar year containing one additional day (or, in the case of lunisolar
+calendars, a month) added to keep the calendar year synchronized with the
+astronomical or seasonal year. Because seasons and astronomical events do not
+repeat in a whole number of days, calendars that have the same number of days in
+each year drift over time with respect to the event that the year is supposed to
+track. By inserting (also called [[Intercalation (timekeeping)|intercalating]])
+an additional day or month into the year, the drift can be corrected. A year
+that is not a leap year is called a common year.
+
+For example, in the Gregorian calendar, each leap year has 366 days instead of
+365, by extending February to 29 days rather than the common 28. These extra
+days occur in years which are multiples of four (with the exception of
+centennial years not divisible by 400). Similarly, in the lunisolar Hebrew
+calendar, Adar Aleph, a 13th lunar month, is added seven times every 19 years to
+the twelve lunar months in its common years to keep its calendar year from
+drifting through the seasons. In the Bah�'� Calendar, a leap day is added when
+needed to ensure that the following year begins on the vernal equinox.
+
+The name "leap year" probably comes from the fact that while a fixed date in the
+Gregorian calendar normally advances one day of the week from one year to the
+next, the day of the week in the 12 months following the leap day (from March 1
+through February 28 of the following year) will advance two days due to the
+extra day (thus "leaping over" one of the days in the week). For example,
+Christmas Day (December 25) fell on a Sunday in 2016, Monday in 2017, and
+Tuesday in 2018, then will fall on Wednesday in 2019 but then "leaps" over
+Thursday to fall on a Friday in 2020.
+
+The length of a day is also occasionally changed by the insertion of leap
+seconds into Coordinated Universal Time (UTC), owing to the variability of
+Earth's rotational period. Unlike leap days, leap seconds are not introduced on
+a regular schedule, since the variability in the length of the day is not
+entirely predictable.
+
+Rule: |(((a|an|the) )?leap year([^.]*) (happens|occurs|takes place|happened|occured|took place|begins|begin|beginning) ((when|during|after|before|between|on|at) )?([^.]*)\.)|
+Sub: |"$1"|
+Rule: |(((happens|occurs|takes place|happened|occured|took place|begins|begin|beginning))([^.]*)\.)|
+Sub: |leap year" $1"|
+LOG ANSWER: 
+Rule: |((leap year)[^.]*((is|was|are|were|happens|occurs|takes place|happened|occured|took place))[^.]*((when|during|after|before|between|on|at))( \w+ \d+(, \d+)?))|
+Sub: |"$2 $3 $5$7"|
+Rule: |(leap year (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*)|
+Sub: |"$1"|
+LOG ANSWER: leap year is a calendar year containing one additional day added to keep the calendar year synchronized with the astronomical or seasonal year
+
+QUERY: |when is dinnertime?|
+KEYTERM: dinnertime
+WIKI TEXT: 
+Suppertime|Supper Time}}
+
+{{Infobox album
+| name = Dinnertime type = Album artist = Alex Taylor cover =
+| alex_taylor_1972.jpg alt = released = February 1972 recorded = Muscle Shoals
+| Sound Studio, Muscle Shoals, Alabama venue = studio = genre = Southern rock
+| length = 39:05 label = Capricorn producer = Johnny Sandlin prev_title = With
+| Friends and Neighbors prev_year = 1971 next_title = Third for Music
+| next_year = 1974
+}} {{Album ratings
+| rev1 = Allmusic rev1Score = rev2 = rev2Score = noprose = yes
+}} 'Dinnertime' is the second album by Alex Taylor, brother of James,
+Livingston and Kate Taylor. The album was recorded at Muscle Shoals Sound
+Studio. The standout tracks are "Change Your Sexy Ways", Randy Newman's "Lets
+Burn Down the Cornfield", Scott Boyer's "Comin' Back to You", and Stephen
+Stills' "Four Days Gone".
+
+Rule: |(((a|an|the) )?dinnertime([^.]*) (happens|occurs|takes place|happened|occured|took place|begins|begin|beginning) ((when|during|after|before|between|on|at) )?([^.]*)\.)|
+Sub: |"$1"|
+Rule: |(((happens|occurs|takes place|happened|occured|took place|begins|begin|beginning))([^.]*)\.)|
+Sub: |dinnertime" $1"|
+Rule: |((dinnertime)[^.]*((is|was|are|were|happens|occurs|takes place|happened|occured|took place))[^.]*((when|during|after|before|between|on|at))( \w+ \d+(, \d+)?))|
+Sub: |"$2 $3 $5$7"|
+Rule: |(dinnertime (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*)|
+Sub: |"$1"|
+LOG ANSWER: Dinnertime is the second album by Alex Taylor, brother of James, Livingston and Kate Taylor
+
+QUERY: |when is mardi gras?|
+KEYTERM: mardi gras
+WIKI TEXT: 
+
+
+
+{{Infobox holiday |holiday_name = Mardi Gras |nickname = Fat Tuesday, Shrove
+Tuesday, Pancake Tuesday |image = KosmicFrenchmenPurpleFaceMardiGras2009.JPG
+|caption = Celebrations in New Orleans, Louisiana, U.S. |celebrations = Parades,
+parties |longtype = Catholic, Cultural |type = French, Spanish, |significance =
+Celebration period before fasting season of Lent |relatedto = Shrove Tuesday;
+Carnival, Shrove Monday, Ash Wednesday, Lent, Užgavėnės, Maslenitsa, Valentine's
+Day |date = Day before Ash Wednesday, 47 days before Easter |date =
+|format=infobox}} |date = |format=infobox |cite=y}} |date = |format=infobox}}
+|date = |format=infobox}} |frequency = Annual }} 'Mardi Gras' (), or 'Fat
+Tuesday', refers to events of the Carnival celebration, beginning on or after
+the Christian feasts of the Epiphany (Three Kings Day) and culminating on the
+day before Ash Wednesday (known as Shrove Tuesday). is French for "Fat Tuesday",
+reflecting the practice of the last night of eating rich, fatty foods before the
+ritual fasting of the Lenten season.
+
+Related popular practices are associated with Shrovetide celebrations before the
+fasting and religious obligations associated with the penitential season of
+Lent. In countries such as the United Kingdom, Mardi Gras is also known as
+Shrove Tuesday, which is derived from the word shrive, meaning "to administer
+the sacrament of confession to; to absolve".
+
+Rule: |(((a|an|the) )?mardi gras([^.]*) (happens|occurs|takes place|happened|occured|took place|begins|begin|beginning) ((when|during|after|before|between|on|at) )?([^.]*)\.)|
+Sub: |"$1"|
+LOG ANSWER: Mardi Gras , or Fat Tuesday, refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday .
+Rule: |(((happens|occurs|takes place|happened|occured|took place|begins|begin|beginning))([^.]*)\.)|
+Sub: |mardi gras" $1"|
+LOG ANSWER: 
+Rule: |((mardi gras)[^.]*((is|was|are|were|happens|occurs|takes place|happened|occured|took place))[^.]*((when|during|after|before|between|on|at))( \w+ \d+(, \d+)?))|
+Sub: |"$2 $3 $5$7"|
+Rule: |(mardi gras (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*)|
+Sub: |"$1"|
+LOG ANSWER: Mardi Gras is also known as Shrove Tuesday, which is derived from the word shrive, meaning to administer the sacrament of confession to; to absolve
+
+QUERY: |who is the queen of england?|
+KEYTERM: queen of england
+WIKI TEXT: 'Queen of England' may refer to:
+
+Rule: |((((a|an|the) )?queen([\w+ ]*)of england)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$7"|
+Rule: |((((a|an|the) )?queen([\w+ ]*)of england)([^.]*)?(([^.])*\.))|
+Sub: |"$2$6"|
+
+QUERY: |who is the president of the united states?|
+KEYTERM: president of the united states
+WIKI TEXT: 
+
+
+
+
+
+
+{{Infobox official post
+| post = President body = theUnited States of America insignia = Seal Of The
+| President Of The United States Of America.svg insigniasize = 120
+| insigniacaption = Presidential Seal flag = Flag of the President of the United
+| States of America.svg flagsize = 130 flagcaption = Presidential Flag image =
+| Donald Trump official portrait (cropped).jpg imagesize = 220 incumbent =
+| Donald Trump incumbentsince = January 20, 2017 department = Executive branch
+| of the U.S. GovernmentExecutive Office of the President style = Mr.
+| President(informal)The Honorable(formal)His Excellency[https://www.webcitatio-
+| n.org/6CDCJ728N?url=http://www.un.int/protocol/documents/Hspmfm.pdf Heads of
+| State, Heads of Government, Ministers for Foreign Affairs], Protocol and
+| Liaison Service, United Nations. Retrieved November 1, 2012.(diplomatic)
+| status = Head of StateHead of Government abbreviation = POTUS member_of =
+| CabinetDomestic Policy CouncilNational Economic CouncilNational Security
+| Council residence = White House seat = Washington, D.C. nominator = Political
+| parties or self-nomination appointer = Electoral College termlength = Four
+| years, renewable once constituting_instrument = United States Constitution
+| formation = first = George Washington salary = $400,000 annually}} website =
+}}
+
+
+The 'President of the United States' ('POTUS')}} is the head of state and head
+of government of the United States of America. The president directs the
+executive branch of the federal government and is the commander-in-chief of the
+United States Armed Forces.
+
+In contemporary times, the president is looked upon as one of the world's most
+powerful political figures as the leader of the only remaining global
+superpower. The role includes responsibility for the world's most expensive
+military, which has the second largest nuclear arsenal. The president also leads
+the nation with the largest economy by nominal GDP. The president possesses
+significant domestic and international hard and soft power.
+
+Article II of the Constitution establishes the executive branch of the federal
+government. It vests the executive power of the United States in the president.
+The power includes the execution and enforcement of federal law, alongside the
+responsibility of appointing federal executive, diplomatic, regulatory and
+judicial officers, and concluding treaties with foreign powers with the advice
+and consent of the Senate. The president is further empowered to grant federal
+pardons and reprieves, and to convene and adjourn either or both houses of
+Congress under extraordinary circumstances. The president directs the foreign
+and domestic policies of the United States, and takes an active role in
+promoting his policy priorities to members of Congress. In addition, as part of
+the system of checks and balances, of the Constitution gives the president the
+power to sign or veto federal legislation. The power of the presidency has
+grown substantially since its formation, as has the power of the federal
+government as a whole.
+
+Through the Electoral College, registered voters indirectly elect the president
+and vice president to a four-year term. This is the only federal election in the
+United States which is not decided by popular vote., The White House. Nine vice
+presidents became president by virtue of a president's intra-term death or
+resignation.
+
+ sets three qualifications for holding the presidency: natural-born U.S.
+ citizenship; at least thirty-five years of age; and residency in the United
+ States for at least fourteen years. The Twenty-second Amendment precludes any
+ person from being elected president to a third term. In all, 44 individuals
+ have served 45 presidencies spanning 57 full four-year terms.. Grover Cleveland
+ served two non-consecutive terms, so he is counted twice, as both the 22nd and
+ 24th president..
+
+Donald Trump of New York is the 45th and current president of the United States.
+He assumed office on January 20, 2017.
+
+Rule: |((((a|an|the) )?president([\w+ ]*)of the united states)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$7"|
+LOG ANSWER: The President of the United States is the head of state and head of government of the United States of America.
+Rule: |((((a|an|the) )?president([\w+ ]*)of the united states)([^.]*)?(([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: President Of The United States Of America
+
+QUERY: |who is spongebob|
+
+QUERY: |who is spongebob?|
+KEYTERM: spongebob
+WIKI TEXT: 
+
+
+
+
+{{Infobox television
+| show_name = SpongeBob SquarePants image = SpongeBob SquarePants logo.svg genre
+| = Comedy creator = Stephen Hillenburg developer = {{Plainlist|
+* Derek Drymon
+* Tim Hill
+* Nick Jennings }}
+| creative_director = {{Plainlist|
+* Derek Drymon (1999–2004)
+* Vincent Waller (2005–15) }}
+| voices = {{Plainlist|
+* Tom Kenny
+* Bill Fagerbakke
+* Rodger Bumpass
+* Clancy Brown
+* Mr. Lawrence
+* Jill Talley
+* Carolyn Lawrence
+* Mary Jo Catlett
+* Lori Alan
+* (Complete list) }}
+| narrated = Tom Kenny (various episodes) theme_music_composer = Derek
+| DrymonMark HarrisonStephen HillenburgBlaise Smith opentheme = "SpongeBob
+| SquarePants Theme", performed by Patrick Pinney endtheme = "SpongeBob Closing
+| Theme", composed by Steve Belfer composer = Steve BelferNicolas CarrSage
+| GuytonJeremy WakefieldBrad Carow (1999–2002)The Blue Hawaiians (1999–2002)Eban
+| Schletter (2000–present)Barry Anthony Trop (2006–13) country = United States
+| language = English num_seasons = 12 num_episodes = 244 list_episodes = List of
+| SpongeBob SquarePants episodes executive_producer = {{Plainlist|
+* Stephen Hillenburg (1999–2018)
+* Paul Tibbitt (2008–17)
+* 'Co-Executive Producers:'
+* Paul Tibbitt (2006–08)
+* Marc Ceccarelli (2018–present)
+* Vincent Waller (2018–present) }}
+| producer = {{Plainlist|
+* Donna Castricone (1999–2002)
+* Helen Kafatic (2002–04)
+* Anne Michaud (2001)
+* Dina Buteyn (2005–10)
+* Jennie Monica Hammond (2010–present)
+* 'Supervising Producers:'
+* Derek Drymon (2002–04)
+* Paul Tibbitt (2005–15)
+* Marc Ceccarelli (2015–2018)
+* Vincent Waller (2015–2018) }}
+| runtime = 11 minutes (regular episodes only)22 minutes (special episodes only)
+| company = {{Plainlist|
+* United Plankton Pictures
+* Nickelodeon Animation Studios }}
+| distributor = Viacom Media Networks network = Nickelodeon}} picture_format =
+| {{Plainlist|
+* NTSC (480i) (1999–2012)
+* HDTV 1080i (2009, 2012–present) }}
+| audio_format = {{Plainlist|
+* Stereo (1999–2012)
+* Dolby Surround 5.1 (2009, 2012–present) }}
+| first_aired = last_aired = related = [[Rocko's Modern Life]] website = https://www.nick.com/shows/spongebob-
+| squarepants image_size = 250
+}} 'SpongeBob SquarePants' is an American animated television series created by
+marine science educator and animator Stephen Hillenburg for Nickelodeon. The
+series chronicles the adventures and endeavors of the title character and his
+various friends in the fictional underwater city of Bikini Bottom. The series'
+popularity has made it a media franchise, as well as the highest rated series to
+ever air on Nickelodeon, and the most distributed property of MTV Networks. As
+of late 2017, the media franchise has generated $13 billion in merchandising
+revenue for Nickelodeon.
+
+Many of the ideas for the series originated in an unpublished educational comic
+book titled The Intertidal Zone, which Hillenburg created in 1989. He began
+developing SpongeBob SquarePants into a television series in 1996 upon the
+cancellation of [[Rocko's Modern Life]], and turned to Tom Kenny, who had worked
+with him on that series, to voice the title character. SpongeBob was originally
+going to be named SpongeBoy, and the series was to be called SpongeBoy Ahoy!,
+but both of these were changed, as the name was already trademarked.
+
+Nickelodeon held a preview for the series in the United States on May 1, 1999,
+following the television airing of the 1999 Kids' Choice Awards. The series
+officially premiered on July 17, 1999. It has received worldwide critical
+acclaim since its premiere and gained enormous popularity by its second season.
+A feature film, [[The SpongeBob SquarePants Movie]], was released in theaters on
+November 19, 2004, and was released on February 6, 2015. In 2018, the series
+began airing its twelfth season.
+
+The series has won a variety of awards, including six Annie Awards, eight
+Golden Reel Awards, four Emmy Awards, 16 Kids' Choice Awards, and two BAFTA
+Children's Awards. Despite its widespread popularity, the series has been
+involved in several public controversies, including one centered on speculation
+over SpongeBob's intended sexual orientation. In 2011, a newly described
+species of fungus, [[Spongiforma squarepantsii]], was named after the cartoon's
+title character. A Broadway musical based on the series opened in 2017 to
+critical acclaim.
+
+On February 14, 2019, it was announced that a SpongeBob SquarePants spin-off is
+in development.
+
+Rule: |((((a|an|the) )?spongebob)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$7"|
+LOG ANSWER: spongebobis
+Rule: |((((a|an|the) )?spongebob)([^.]*)?(([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: SpongeBob.
+
+QUERY: |when is an apple ripe?|
+KEYTERM: apple ripe
+
+QUERY: |when is an avacado ripe?|
+KEYTERM: avacado ripe
+
+QUERY: |where is england?|
+KEYTERM: england
+WIKI TEXT: 
+
+
+
+{{Infobox country UK
+| image_flag = Flag of England.svg flag_alt = Vertical red cross on a white
+| background image_coat = symbol_width = symbol_type = national_motto =
+| englishmotto = national_anthem = Various proposedPredominantly "God Save the
+| Queen" status = Country capital = London religion = Church of England demonym
+| = English coordinates = largest_city = London languages_type = National
+| language languages = English languages2_type = Regional&nbsp;languages
+| languages2 = Cornish legal_jurisdiction = England and Wales government_type =
+| Part of a constitutional monarchy monarch = Elizabeth II number_of_mps = 533
+| legislature = UK Parliament ethnic_groups =
+ {{unbulleted list |item_style=white-space:nowrap;
+  | 85.4% White
+  |  7.8% Asian
+  |  3.5% Black
+  |  2.3% Mixed .4% Arab .6% Other
+ }}
+| ethnic_groups_year = 2011 established_event1 = Anglo-Saxon settlement
+| established_date1 = 5th–6th century established_event2 = Unification
+| established_date2 = 10th century established_event3 = Union with Scotland
+| established_date3 = 1 May 1707 area_rank = area_sq_mi = 50301 area_km2 =
+| 130279 area_footnote = [http://www.ons.gov.uk/ons/publications/re-reference-
+| tables.html?edition=tcm%3A77-325257 Region and Country Profiles, Key
+| Statistics and Profiles, October 2013], ONS. Retrieved 9 August 2015.
+| area_label = Land percent_water = population_estimate = 55,619,400
+| population_estimate_rank = population_estimate_year = 2017 population_census =
+| 53,012,456 population_census_year = 2011 population_density_mi2 = auto
+| population_density_km2 = 424.3 population_density_rank = pop_den_footnote =
+| GDP_PPP = GDP_PPP_rank = GDP_PPP_year = GDP_PPP_per_capita =
+| GDP_PPP_per_capita_rank = GDP_nominal = GDP_nominal_rank = GDP_nominal_year =
+| GDP_nominal_per_capita = GVA = £1.562 trillion($B) GVA_rank = GVA_year = 2017
+| GVA_per_capita = £28,096($) Gini_year = Gini_change = Gini = Gini_ref =
+| Gini_rank = HDI_year = HDI_change = HDI = HDI_ref = HDI_rank = patron_saint =
+| Saint George cctld = footnote_a = While England does not have its own
+| legislative assembly, a Legislative Grand Committee composed of only the 533
+| MPs representing English constituencies can scrutinise and vote on bills going
+| through parliament which only affect England.
+}}
+
+'England' is a country that is part of the United Kingdom. It shares land
+borders with Wales to the west and Scotland to the north-northwest. The Irish
+Sea lies west of England and the Celtic Sea lies to the southwest. England is
+separated from continental Europe by the North Sea to the east and the English
+Channel to the south. The country covers five-eighths of the island of Great
+Britain, which lies in the North Atlantic, and includes over 100 smaller
+islands, such as the Isles of Scilly and the Isle of Wight.
+
+The area now called England was first inhabited by modern humans during the
+Upper Palaeolithic period, but takes its name from the Angles, a Germanic tribe
+deriving its name from the Anglia peninsula, who settled during the 5th and 6th
+centuries. England became a unified state in the 10th century, and since the Age
+of Discovery, which began during the 15th century, has had a significant
+cultural and legal impact on the wider world. The English language, the Anglican
+Church, and English law – the basis for the common law legal systems of many
+other countries around the world – developed in England, and the country's
+parliamentary system of government has been widely adopted by other nations. The
+Industrial Revolution began in 18th-century England, transforming its society
+into the world's first industrialised nation.
+
+England's terrain is chiefly low hills and plains, especially in central and
+southern England. However, there is upland and mountainous terrain in the north
+(for example, the Lake District and Pennines) and in the west (for example,
+Dartmoor and the Shropshire Hills). The capital is London, which has the
+largest metropolitan area in both the United Kingdom and the European
+Union.According to the European Statistical Agency, London is the largest
+Larger Urban Zone in the EU, a measure of metropolitan area which comprises a
+city's urban core as well as its surrounding commuting zone. London's municipal
+population is also the largest in the EU. England's population of over
+55&nbsp;million comprises 84% of the population of the United Kingdom, largely
+concentrated around London, the South East, and conurbations in the Midlands,
+the North West, the North East, and Yorkshire, which each developed as major
+industrial regions during the 19th
+century.[http://www.ons.gov.uk/ons/dcp171778_270487.pdf 2011 Census –
+Population and household estimates for England and Wales, March 2011]. Accessed
+31 May 2013.
+
+The Kingdom of England – which after 1535 included Wales – ceased being a
+separate sovereign state on 1 May 1707, when the Acts of Union put into effect
+the terms agreed in the Treaty of Union the previous year, resulting in a
+political union with the Kingdom of Scotland to create the Kingdom of Great
+Britain.William E. Burns, A Brief History of Great Britain,
+[https://books.google.com/books?id=Fjf4YynnC90C&pg=PT21#v=onepage p. xxi][http://www.parliament.uk/about/living-
+heritage/evolutionofparliament/legislativescrutiny/ Acts of Union 1707]
+parliament.uk. Retrieved 27 January 2011 In 1801, Great Britain was united with
+the Kingdom of Ireland (through another Act of Union) to become the United
+Kingdom of Great Britain and Ireland. In 1922 the Irish Free State seceded from
+the United Kingdom, leading to the latter being renamed the United Kingdom of
+Great Britain and Northern Ireland.
+
+Rule: |(((a|an|the) )?england ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((england)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((england)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: England is part of the United Kingdom
+
+QUERY: |where is asia?|
+KEYTERM: asia
+WIKI TEXT: 
+
+
+
+
+{{Infobox continent |title = Asia |image = Asia (orthographic projection).svg
+|image_size = 220px |area = &nbsp;(1st) |population = (; 1st) |density = 100/km2
+(260/sq mi) |GDP_nominal = $30.22 trillion (2018; 1st) |GDP_PPP = $61.25
+trillion (2018; 1st) |GDP_per_capita = $7,090 (2018; 5th) |demonym = Asian
+|countries = 49 UN members, 1 UN observer, 5 other states |list_countries = List
+of sovereign states and dependent territories in Asia |dependencies =
+{{Collapsible list
+| titlestyle = background:transparent;text-align:left;font-weight:normal;
+| list_style = text-align:left; 1 = | 2 = | 3 = | 4 = | 5 = | 6 =
+}} |unrecognized = {{Collapsible list
+| titlestyle = background:transparent;text-align:left;font-weight:normal;
+| list_style = text-align:left; 1 = 2 = 3 = 4 = 5 = }}
+|languages = List of languages |time = UTC+2 to UTC+12 |internet = .asia |cities
+={{plainlist|
+* Metropolitan areas of Asia
+* List of cities in Asia}} {{hlist
+| list_style = text-align:left;
+|Tokyo |Jakarta |Delhi |Karachi |Seoul |Shanghai |Manila |Mumbai |Beijing
+|Guangzhou |Osaka |Dhaka |Bangkok |Chittagong |Tehran |Dubai |Ho Chi Minh City
+|Singapore }} }}
+
+'Asia' () is Earth's largest and most populous continent, located primarily in
+the Eastern and Northern Hemispheres. It shares the continental landmass of
+Eurasia with the continent of Europe and the continental landmass of Afro-
+Eurasia with both Europe and Africa. Asia covers an area of , about 30% of
+Earth's total land area and 8.7% of the Earth's total surface area. The
+continent, which has long been home to the majority of the human population,,
+[https://web.archive.org/web/20160101220025/http://www.un.org/esa/population/pu-
+blications/sixbillion/sixbilpart1.pdf Table 2] was the site of many of the first
+civilizations. Asia is notable for not only its overall large size and
+population, but also dense and large settlements, as well as vast barely
+populated regions. Its 4.5 billion people () constitute roughly 60% of the
+world's population.
+
+In general terms, Asia is bounded on the east by the Pacific Ocean, on the south
+by the Indian Ocean, and on the north by the Arctic Ocean. The border of Asia
+with Europe is a historical and cultural construct, as there is no clear
+physical and geographical separation between them. It is somewhat arbitrary and
+has moved since its first conception in classical antiquity. The division of
+Eurasia into two continents reflects East–West cultural, linguistic, and ethnic
+differences, some of which vary on a spectrum rather than with a sharp dividing
+line. The most commonly accepted boundaries place Asia to the east of the Suez
+Canal separating it from Africa; and to the east of the Turkish Straits, the
+Ural Mountains and Ural River, and to the south of the Caucasus Mountains and
+the Caspian and Black Seas, separating it from Europe. "Europe" (pp. 68–69);
+"Asia" (pp. 90–91): "A commonly accepted division between Asia and Europe is
+formed by the Ural Mountains, Ural River, Caspian Sea, Caucasus Mountains, and
+the Black Sea with its outlets, the Bosporus and Dardanelles."
+
+China and India alternated in being the largest economies in the world from 1 to
+1800 CE. China was a major economic power and attracted many to the east, and
+for many the legendary wealth and prosperity of the ancient culture of India
+personified Asia,[http://www.indianscience.org/essays/22-%20E--
+Gems%20&%20Minerals%20F.pdf] attracting European commerce, exploration and
+colonialism. The accidental discovery of a trans-Atlantic route from Europe to
+America by Columbus while in search for a route to India demonstrates this deep
+fascination. The Silk Road became the main east–west trading route in the Asian
+hinterlands while the Straits of Malacca stood as a major sea route. Asia has
+exhibited economic dynamism (particularly East Asia) as well as robust
+population growth during the 20th century, but overall population growth has
+since fallen.. Asia was the birthplace of most of the world's mainstream
+religions including Hinduism, Zoroastrianism, Judaism, Jainism, Buddhism,
+Confucianism, Taoism, Christianity, Islam, Sikhism, as well as many other
+religions.
+
+Given its size and diversity, the concept of Asia—a name dating back to
+classical antiquity—may actually have more to do with human geography than
+physical geography. Asia varies greatly across and within its regions with
+regard to ethnic groups, cultures, environments, economics, historical ties
+and government systems. It also has a mix of many different climates ranging
+from the equatorial south via the hot desert in the Middle East, temperate
+areas in the east and the continental centre to vast subarctic and polar areas
+in Siberia.
+
+Rule: |(((a|an|the) )?asia ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((asia)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((asia)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: asia is Earths largest and most populous continent, located primarily in the Eastern and Northern Hemispheres
+
+QUERY: |where is the eiffel tower?|
+KEYTERM: eiffel tower
+WIKI TEXT: 
+
+
+
+
+
+{{Infobox building
+| name = The Eiffel Tower native_name = Tour Eiffel native_name_lang = fr image
+| = File:Tour Eiffel Wikimedia Commons (cropped).jpg caption = Seen from the
+| Champ de Mars highest_start = 1889 highest_end = 1930 location = 7th
+| arrondissement, Paris, France
+
+| coordinates = start_date = 28 January 1887 completion_date = 15 March 1889
+| opening = 31 March 1889 () building_type = Observation towerBroadcasting tower
+| architectural = tip = antenna_spire = roof = top_floor = floor_count = 3
+| elevator_count = 8 cost = floor_area = architect = Stephen Sauvestre
+| structural_engineer = Maurice KoechlinÉmile Nouguier main_contractor =
+| Compagnie des Etablissements Eiffel developer = owner = City of Paris, France
+| management = (SETE) website = references = I.
+}}
+
+The 'Eiffel Tower' ( ; ) is a wrought-iron lattice tower on the Champ de Mars in
+Paris, France. It is named after the engineer Gustave Eiffel, whose company
+designed and built the tower.
+
+Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was
+initially criticised by some of France's leading artists and intellectuals for
+its design, but it has become a global cultural icon of France and one of the
+most recognisable structures in the world. The Eiffel Tower is the most-visited
+paid monument in the world; 6.91&nbsp;million people ascended it in 2015.
+
+The tower is tall, about the same height as an 81- building, and the tallest
+structure in Paris. Its base is square, measuring on each side. During its
+construction, the Eiffel Tower surpassed the Washington Monument to become the
+tallest man-made structure in the world, a title it held for 41 years until the
+Chrysler Building in New York City was finished in 1930. Due to the addition of
+a broadcasting aerial at the top of the tower in 1957, it is now taller than the
+Chrysler Building by . Excluding transmitters, the Eiffel Tower is the second
+tallest free-standing structure in France after the Millau Viaduct.
+
+The tower has three levels for visitors, with restaurants on the first and
+second levels. The top level's upper platform is above the ground – the highest
+observation deck accessible to the public in the European Union. Tickets can be
+purchased to ascend by stairs or lift to the first and second levels. The climb
+from ground level to the first level is over 300 steps, as is the climb from the
+first level to the second. Although there is a staircase to the top level, it is
+usually accessible only by lift.
+
+Rule: |(((a|an|the) )?eiffel tower ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((eiffel tower)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((eiffel tower)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France
+
+QUERY: |where is the leaning tower of pisa?|
+KEYTERM: leaning tower of pisa
+WIKI TEXT: 
+
+
+
+{{Infobox religious building |building_name = Leaning Tower of Pisa |native_name
+= Torre pendente di Pisa |native_name_lang = it |image = The Leaning Tower of
+Pisa SB.jpeg |caption = Leaning Tower of Pisa in 2013 |location = Pisa, Italy
+|geo = |religious_affiliation = Roman Catholic |province = |district = |status =
+|functional_status = |heritage_designation= |website = |architecture = yes
+|architect = Bonanno Pisano |architecture_type = |architecture_style =Romanesque
+|groundbreaking = 1173 |year_completed = 1372 |height_max = |materials =
+{{Flatlist|
+* marble
+* stone }}
+| footnotes =
+  {{Infobox UNESCO World Heritage Site |child = yes |Part_of = Piazza del Duomo,
+  Pisa |ID = 395 |Year = 1987 |Criteria = Cultural: i, ii, iv, vi }} }}
+
+The 'Leaning Tower of Pisa' () or simply the 'Tower of Pisa' (Torre di Pisa ) is
+the [[campanile]], or freestanding bell tower, of the cathedral of the Italian
+city of Pisa, known worldwide for its nearly four-degree lean, the result of an
+unstable foundation. The tower is situated behind the Pisa Cathedral and is the
+third oldest structure in the city's Cathedral Square ([[Piazza del Duomo,
+Pisa|Piazza del Duomo]]), after the cathedral and the Pisa Baptistry.
+
+The tower's tilt began during construction in the 12th century, due to soft
+ground on one side, which was unable to properly support the structure's weight.
+The tilt increased in the decades before the structure was completed in the 14th
+century. It gradually increased until the structure was stabilized (and the tilt
+partially corrected) by efforts in the late 20th and early 21st centuries.
+
+The height of the tower is from the ground on the low side and on the high side.
+The width of the walls at the base is . Its weight is estimated at . The tower
+has 296 or 294 steps; the seventh floor has two fewer steps on the north-facing
+staircase. In 1990 the tower leaned at an angle of 5.5 degrees, but following
+remedial work between 1993 and 2001 this was reduced to 3.97 degrees, reducing
+the overhang by 45&nbsp;cm at a cost of �200m. It lost a further 4&nbsp;cm of
+tilt in the two decades to 2018.
+
+Rule: |(((a|an|the) )?leaning tower of pisa ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((leaning tower of pisa)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((leaning tower of pisa)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: Leaning Tower of Pisa is the , or freestanding bell tower, of the cathedral of the Italian city of Pisa, known worldwide for its nearly four-degree lean, the result of an unstable foundation
+
+QUERY: |where is the himalayas?|
+KEYTERM: himalayas
+WIKI TEXT: 
+
+
+
+{{Infobox mountain range
+| name = Himalayas native_name = photo = Mount Everest as seen from Drukair2 PLW
+| edit.jpg photo_caption = Aerial view of Mount Everest and surrounding
+| landscape country1 = India country2 = Nepal country3 = Bhutan country4 = China
+| country5 = Pakistan
+
+| region_type = region = Asia border = highest = Mount Everest elevation_m =
+| 8850 highest_location = Nepal and China coordinates = range_coordinates =
+| length_km = 2400 geology = period = orogeny = map_image = Himalayas Map.png
+| map_caption = The general location of the Himalayas mountain range (this map
+| has the Hindu Kush in the Himalaya, not normally regarded as part of the core
+| Himalayas).
+}}
+
+The 'Himalayas', or 'Himalaya' (), form a mountain range in Asia, separating the
+plains of the Indian subcontinent from the Tibetan Plateau. The range has many
+of the Earth's highest peaks, including the highest, Mount Everest. The
+Himalayas include over fifty mountains exceeding in elevation, including ten of
+the fourteen 8,000-metre peaks. By contrast, the highest peak outside Asia
+(Aconcagua, in the Andes) is tall.
+
+Lifted by the subduction of the Indian tectonic plate under the Eurasian Plate,
+the Himalayan mountain range runs west-northwest to east-southeast in an arc
+long. Its western anchor, Nanga Parbat, lies just south of the northernmost bend
+of Indus river. Its eastern anchor, Namcha Barwa, is just west of the great bend
+of the Yarlung Tsangpo River (upper stream of the Brahmaputra River). The
+Himalayan range is bordered on the northwest by the Karakoram and the Hindu Kush
+ranges. To the north, the chain is separated from the Tibetan Plateau by a wide
+tectonic valley called the Indus-Tsangpo Suture. Towards the south the arc of
+the Himalaya is ringed by the very low Indo-Gangetic Plain. 275A: 1–44. The
+range varies in width from in the west (Pakistan) to in the east (Arunachal
+Pradesh). The Himalayas are distinct from the other great ranges of central
+Asia, although sometimes the term 'Himalaya' (or 'Greater Himalaya') is loosely
+used to include the Karakoram and some of the other ranges.
+
+The Himalayas are inhabited by 52.7&nbsp;million people,Apollo, M. (2017). [htt-
+ps://www.researchgate.net/publication/313849476_The_population_of_Himalayan_reg-
+ions_-_by_the_numbers_Past_present_and_future The population of Himalayan
+regions – by the numbers: Past, present and future]. [In:] R. Efe, M. Öztürk
+(eds.), Contemporary Studies in Environment and Tourism, Chapter: 9
+(pp.143–159). Publisher: Cambridge Scholars Publishing. and are spread across
+five countries: Nepal, India, Bhutan, China and Pakistan. Some of the world's
+major rivers – the Indus, the Ganges and the Tsangpo-Brahmaputra – rise in the
+Himalayas, and their combined drainage basin is home to roughly 600 million
+people. The Himalayas have a profound effect on the climate of the region,
+helping to keep the monsoon rains on the Indian plain and limiting rainfall on
+the Tibetan plateau. The Himalayas have profoundly shaped the cultures of the
+Indian subcontinent; many Himalayan peaks are sacred in Hinduism and Buddhism.
+
+Rule: |(((a|an|the) )?himalayas ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((himalayas)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((himalayas)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: Himalayas is loosely used to include the Karakoram and some of the other ranges
+
+QUERY: |where is kenya?|
+KEYTERM: kenya
+WIKI TEXT: 
+
+
+
+
+
+{{Infobox country |conventional_long_name = Republic of Kenya |common_name =
+Kenya |native_name = Jamhuri ya Kenya |image_flag = Flag of Kenya.svg
+|image_coat = Coat of arms of Kenya (Official).svg |national_motto = "Harambee"
+(Swahili) |national_anthem = "Ee Mungu Nguvu Yetu"() |image_map = Location Kenya
+AU Africa.svg |map_caption = |image_map2 = Kenya - Location Map (2013) - KEN -
+UNOCHA.svg |capital = Nairobi |coordinates = |largest_city = Nairobi
+|official_languages = |languages_type = National language |languages = Swahili
+|ethnic_groups = {{unbulleted list
+ | 22% Kikuyu 14% Luhya 13% Luo 12% Kalenjin 11% Kamba 6% Kisii 6% Meru 15%
+ | other African 1% non-African
+ }} |ethnic_groups_year = 2018 |demonym = Kenyan |government_type = Unitary
+ presidential constitutional republic |leader_title1 = President |leader_name1 =
+ Uhuru Kenyatta |leader_title2 = Deputy President |leader_name2 = William Ruto
+ |leader_title3 = Speaker of the Senate |leader_name3 = Kenneth Lusaka
+ |leader_title4 = Speaker of the National Assembly |leader_name4 = Justin Muturi
+ |leader_title5 = Chief Justice |leader_name5 = David Maraga |leader_title6 =
+ Attorney General |leader_name6 = Paul Kihara Kariuki |legislature = Parliament
+ |upper_house = Senate |lower_house = National Assembly |sovereignty_type =
+ Independence |established_event1 = from the United Kingdom |established_date1 =
+ 12 December 1963 |established_event2 = Republic declared |established_date2 =
+ 12 December 1964 |area_km2 = 580,367 |area_footnote = |area_rank = 48th
+ |area_sq_mi = 224,960 |percent_water = 2.3 |population_estimate = 49,125,325
+ |population_census = 38,610,097 |population_estimate_year = 2017
+ |population_estimate_rank = 28th |population_census_year = 2009
+ |population_density_km2 = 78 |population_density_sq_mi = 202
+ |population_density_rank = 124th |GDP_PPP = }} |GDP_PPP_year = 2018
+ |GDP_PPP_rank = |GDP_PPP_per_capita = $3,896 |GDP_PPP_per_capita_rank =
+ |GDP_nominal = $98.264 billion |GDP_nominal_year = 2019 |GDP_nominal_rank =
+ |GDP_nominal_per_capita = $1,991 |GDP_nominal_per_capita_rank = |Gini = 42.5
+ |Gini_year = 2014 |Gini_change = |Gini_ref = |Gini_rank = 48th |HDI = 0.590
+ |HDI_year = 2017 |HDI_change = increase |HDI_ref = |HDI_rank = 142nd |currency
+ = Kenyan shilling |currency_code = KES |time_zone = EAT |utc_offset = +3
+ |date_format = dd/mm/yy (AD) |drives_on = left |calling_code = +254 |cctld =
+ .ke |footnotes = According to the CIA, estimates for this country explicitly
+ take into account the effects of mortality because of AIDS; this can result in
+ lower life expectancy, higher infant mortality and death rates, lower
+ population and growth rates, and changes in the distribution of population by
+ age and sex, than would otherwise be expected. }}
+
+'Kenya' (; ), officially the 'Republic of Kenya' (), is a country in Africa with
+47 semiautonomous counties governed by elected governors. At , Kenya is the
+world's 48th largest country by total area. With a population of more than 52.2
+million people, Kenya is the 27th most populous country. Kenya's capital and
+largest city is Nairobi while its oldest city and first capital is the coastal
+city of Mombasa. Kisumu City is the third largest city and a critical inland
+port at Lake Victoria. Other important urban centres include Nakuru and Eldoret.
+
+Nilotic-speaking pastoralists (ancestral to Kenya's Nilotic speakers) started
+migrating from present-day Southern Sudan into Kenya around 500 BC. European
+colonisation of Kenya began in the 19th century during the European exploration
+of the interior. The modern-day Kenya emerged from a protectorate established by
+the British Empire in 1895 and the subsequent Kenya Colony, which began in 1920.
+Numerous disputes between Great Britain and the colony led to the Mau Mau
+revolution, which began in 1952, and the subsequent declaration of independence
+in 1963. After independence, Kenya remained a member of the Commonwealth of
+Nations. The current constitution was adopted in 2010 to replace the 1963
+independence constitution.
+
+Kenya is a presidential representative democratic republic, in which elected
+officials represent the people and the president is the head of state and
+government. Kenya is a member of United Nations, World Bank, International
+Monetary Fund, COMESA, and other international organisations. With a GNI of
+1,460, Data|website=data.worldbank.org|access-date=2019-01-29}} Kenya is a lower-middle-
+income economy. Kenya's economy is the largest in eastern and central Africa,[h-
+ttp://www.imf.org/external/pubs/ft/weo/2011/01/weodata/weorept.aspx?pr.x=52&pr.-
+y=2&sy=2008&ey=2011&scsm=1&ssd=1&sort=country&ds=.&br=1&c=644&s=NGDPD%2CNGDPDPC-
+%2CPPPGDP%2CPPPPC%2CLP&grp=0&a= Ethiopia GDP purchasing power 2010: 86 billion].
+Imf.org. 14 September 2006.[http://www.imf.org/external/pubs/ft/weo/2011/01/weo-
+data/weorept.aspx?sy=2008&ey=2011&scsm=1&ssd=1&sort=country&ds=.&br=1&c=664&s=N-
+GDPD%2CNGDPDPC%2CPPPGDP%2CPPPPC%2CLP&grp=0&a=&pr.x=69&pr.y=14 Kenya GDP
+purchasing power 2010: 66 Billion]. Imf.org. 14 September 2006. with Nairobi
+serving as a major regional commercial hub. Agriculture is the largest sector;
+tea and coffee are traditional cash crops, while fresh flowers are a fast-
+growing export. The service industry is also a major economic driver,
+particularly tourism. Kenya is a member of the East African Community trade
+bloc, though some international trade organisations categorise it as part of the
+Greater Horn of Africa.Maxwell, Daniel, and Ben Watkins. "Humanitarian
+information systems and emergencies in the Greater Horn of Africa: logical
+components and logical linkages." Disasters 27.1 (2003): 72-90. Africa is
+Kenya's largest export market, followed by the European Union.
+
+Rule: |(((a|an|the) )?kenya ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((kenya)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((kenya)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: Kenya is a country in Africa with 47 semiautonomous counties governed by elected governors
+
+QUERY: |where is waldo?|
+KEYTERM: waldo
+WIKI TEXT: 
+'Waldo' may refer to:
+
+Rule: |(((a|an|the) )?waldo ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((waldo)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((waldo)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+
+QUERY: |where is mount everest?|
+KEYTERM: mount everest
+WIKI TEXT: 
+
+
+
+
+
+{{Infobox mountain
+| name = Mount Everest native_name = {{plain list|
+*
+*
+* }}
+| photo =File:Everest kalapatthar.jpg photo_size = photo_caption = elevation_ref
+| =Based on the 1999 and 2005 surveys of elevation of snow cap, not rock head.
+| For more details, see [[#Surveys|Surveys]]. Ranked 1st prominence_ref = Ranked
+| 1st(Notice special definition for Everest) map = Nepal Province1#Nepal#China
+| Tibet topography#China#Asia map_caption = Location on the Province No. 1,
+| Nepal – Tibet Autonomous Region, China border label = Mount Everest
+| label_position = left listing = Seven SummitsEight-thousanderCountry high
+| pointUltra location = Solukhumbu District, Province No. 1, Nepal;Geography of
+| Nepal: Physical, Economic, Cultural & Regional By Netra Bahadur Thapa, D.P.
+| Thapa Orient Longmans, 1969 Tingri County, Xigazê, Tibet Autonomous Region,
+| ChinaThe position of the summit of Everest on the international border is
+| clearly shown on detailed topographic mapping, including official Nepalese
+| mapping. country1 = Nepal country2 = China range = Mahalangur Himal, Himalayas
+| coordinates = coordinates_ref =The WGS84 coordinates given here were
+| calculated using detailed topographic mapping and are in agreement with
+| [http://www.adventurestats.com/tables/8000ergeo.shtml adventurestats]. They
+| are unlikely to be in error by more than 2". Coordinates showing Everest to be
+| more than a minute further east that appeared on this page until recently, and
+| still appear in Wikipedia in several other languages, are incorrect.
+| first_ascent = 29 May 1953Edmund Hillary and Tenzing Norgay(First winter
+| ascent 17 February 1980 Krzysztof Wielicki, Leszek Cichy) normal_route =
+| southeast ridge (Nepal)
+}}
+
+
+
+
+'Mount Everest', known in Nepali as 'Sagarmatha' () and in Tibetan as
+'Chomolungma' (), is Earth's highest mountain above sea level, located in the
+Mahalangur Himal sub-range of the Himalayas. The international border between
+Nepal (Province No. 1) and China (Tibet Autonomous Region) runs across its
+summit point.
+
+The current official elevation of , recognized by China and Nepal, was
+established by a 1955 Indian survey and subsequently confirmed by a Chinese
+survey in 1975. In 2005, China remeasured the rock height of the mountain, with
+a result of 8844.43 m (29,017 ft). There followed an argument between China and
+Nepal as to whether the official height should be the rock height (8,844 m,
+China) or the snow height (8,848 m, Nepal). In 2010, an agreement was reached by
+both sides that the height of Everest is 8,848 m, and Nepal recognizes China's
+claim that the rock height of Everest is 8,844 m.
+
+In 1865, Everest was given its official English name by the Royal Geographical
+Society, upon a recommendation by Andrew Waugh, the British . As there appeared
+to be several different local names, Waugh chose to name the mountain after his
+predecessor in the post, Sir George Everest, despite Everest's objections.
+
+Mount Everest attracts many climbers, some of them highly experienced
+mountaineers. There are two main climbing routes, one approaching the summit
+from the southeast in Nepal (known as the "standard route") and the other from
+the north in Tibet. While not posing substantial technical climbing challenges
+on the standard route, Everest presents dangers such as altitude sickness,
+weather, and wind, as well as significant hazards from avalanches and the Khumbu
+Icefall. , nearly 300 people have died on Everest, many of whose bodies remain
+on the mountain.
+
+The first recorded efforts to reach Everest's summit were made by British
+mountaineers. As Nepal did not allow foreigners into the country at the time,
+the British made several attempts on the north ridge route from the Tibetan
+side. After the first reconnaissance expedition by the British in 1921 reached
+on the North Col, the 1922 expedition pushed the north ridge route up to ,
+marking the first time a human had climbed above . Seven porters were killed in
+an avalanche on the descent from the North Col. The 1924 expedition resulted in
+one of the greatest mysteries on Everest to this day: George Mallory and Andrew
+Irvine made a final summit attempt on 8 June but never returned, sparking debate
+as to whether or not they were the first to reach the top. They had been spotted
+high on the mountain that day but disappeared in the clouds, never to be seen
+again, until Mallory's body was found in 1999 at on the north face. Tenzing
+Norgay and Edmund Hillary made the first official ascent of Everest in 1953,
+using the southeast ridge route. Norgay had reached the previous year as a
+member of the 1952 Swiss expedition. The Chinese mountaineering team of Wang
+Fuzhou, Gonpo, and Qu Yinhua made the first reported ascent of the peak from the
+north ridge on 25 May 1960.
+
+Rule: |(((a|an|the) )?mount everest ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((mount everest)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((mount everest)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: Mount Everest is Earths highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas
+
+QUERY: |where do horses originate?|
+
+QUERY: |where are horses from?|
+KEYTERM: horses from
+
+QUERY: |where is paris?|
+KEYTERM: paris
+WIKI TEXT: 
+
+
+
+
+{{infobox settlement |name = Paris |settlement_type = Commune and department
+|image = |image_caption = Clockwise from top: skyline of Paris on the Seine with
+the Eiffel Tower, Notre-Dame de Paris, the Louvre and its large pyramid, and the
+Arc de Triomphe |image_flag = Flag of Paris.svg |flag_size = 95px |image_shield
+= Grandes_Armes_de_Paris.svg |shield_size = 95px |motto = |coordinates =
+|pushpin_map = France#Europe |pushpin_map_caption = Location within
+France##Location within Europe |pushpin_relief = 1 |subdivision_type = Country
+|subdivision_name = France |subdivision_type1 = Region |subdivision_name1 = Île-de-
+France |subdivision_type2 = Department |subdivision_name2 = Paris |parts_type =
+Subdivisions |parts = 20 arrondissements |leader_title = Mayor |leader_name =
+Anne Hidalgo (PS) |unit_pref = Metric |area_total_km2 = 105.4 |population_total
+= 2,140,526 |population_footnotes = |population_metro = 12,532,901
+|population_metro_footnotes = https://www.insee.fr/fr/statistiques/2011101?geo=AU2010-
+001 |population_as_of = January 1, 2019 (est) |population_density_km2 = auto
+|population_demonym = Parisian |timezone1 = CET |utc_offset1 = +1 |timezone1_DST
+= CEST |utc_offset1_DST = +2 |postal_code_type = INSEE/postal code |postal_code
+= 75001–75020, 75116 |website = [https://www.paris.fr/ www.paris.fr] }}
+
+
+'Paris' () is the capital and most populous city of France, with an area of and
+an official estimated population of 2,140,526 residents as of 1 January 2019.
+Since the 17th century, Paris has been one of Europe's major centres of finance,
+diplomacy, commerce, fashion, science, and the arts.
+
+The City of Paris is the centre and seat of government of the Île-de-France, or
+Paris Region, which has an estimated official 2019 population of 12,213,364, or
+about 18 percent of the population of France. The Paris Region had a GDP of €681
+billion (US$850 billion) in 2016, accounting for 31 percent of the GDP of
+France, and was the 5th largest region by GDP in the world. According to the
+Economist Intelligence Unit Worldwide Cost of Living Survey in 2018, Paris was
+the second most expensive city in the world, after Singapore, and ahead of
+Zurich, Hong Kong, Oslo and Geneva.Economist Intelligence Unit Worldwide Cost of
+Living Survey, 2018, cited in the London Telegraph, [https://www.telegraph.co.uk/travel/city-breaks/most-expensive-and-cheapest-
+cities-2018/ 16 March 2018] Another source ranked Paris as most expensive, on a
+par with Singapore and Hong-Kong, in 2018.[ https://www.courrierinternational.com/article/classement-singapour-hong-kong-
+paris-le-trio-des-villes-les-plus-cheres-du-monde International mail.com].
+
+The city is a major rail, highway, and air-transport hub served by two
+international airports: Paris-Charles de Gaulle (the second busiest airport in
+Europe) and Paris-Orly. Opened in 1900, the city's subway system, the Paris
+Métro, serves 5.23 million passengers daily, and is the second busiest metro
+system in Europe after Moscow Metro. Gare du Nord is the 24th busiest railway
+station in the world, and the first located outside Japan, with 262 million
+passengers in 2015.
+
+Paris is especially known for its museums and architectural landmarks: the
+Louvre was the most visited art museum in the world in 2018, with 10.2 million
+visitors.The Art Newspaper Review Visitor Figures Survey for 2017 (April, 2018)
+The Musée d'Orsay and Musée de l'Orangerie are noted for their collections of
+French Impressionist art, and the Pompidou Centre Musée National d'Art Moderne
+has the largest collection of modern and contemporary art in Europe. The
+historical district along the Seine in the city centre is classified as a UNESCO
+Heritage Site. Popular landmarks in the centre of the city include the Cathedral
+of Notre Dame de Paris and the Gothic royal chapel of Sainte-Chapelle, both on
+the Île de la Cité; the Eiffel Tower, constructed for the Paris Universal
+Exposition of 1889; the Grand Palais and Petit Palais, built for the Paris
+Universal Exposition of 1900; the Arc de Triomphe on the Champs-Élysées, and the
+Basilica of Sacré-Coeur on the hill of Montmartre. Paris received 23 million
+visitors in 2017, measured by hotel stays, with the largest numbers of foreign
+visitors coming from the United States, the UK, Germany and China.Key Figures:
+Paris Convention and Visitors Bureau Key[https://www.lesechos.fr/industrie-services/tourisme-
+transport/0301026686629-vers-une-frequentation-touristique-record-a-paris-en-
+2017-2138559.php Vers une fréquentation touristique record à Paris en 2017] on
+[[Les Échos (France)|Les Echos]] It was ranked as the third most visited travel
+destination in the world in 2017, after Bangkok and London.Mastercard Global
+Destinations Index 2017
+
+The football club Paris Saint-Germain and the rugby union club Stade Français
+are based in Paris. The 80,000-seat Stade de France, built for the 1998 FIFA
+World Cup, is located just north of Paris in the neighbouring commune of Saint-
+Denis. Paris hosts the annual French Open Grand Slam tennis tournament on the
+red clay of Roland Garros. Paris hosted the Olympic Games in 1900, 1924 and
+will host the 2024 Summer Olympics. The 1938 and 1998 FIFA World Cups, the
+2007 Rugby World Cup, and the 1960, 1984, and 2016 UEFA European Championships
+were also held in the city and, every July, the Tour de France bicycle race
+finishes there.
+
+Rule: |(((a|an|the) )?paris ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((paris)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+LOG ANSWER: Paris is in France, with an area of and an official estimated population of 2,140,526 residents as of 1 January 2019
+Rule: |((paris)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: Paris is the capital and most populous city of France, with an area of and an official estimated population of 2,140,526 residents as of 1 January 2019
+
+QUERY: |where is the grand canyon?|
+KEYTERM: grand canyon
+WIKI TEXT: 
+
+
+{{Infobox valley |name = Grand Canyon |length = |width = |elevation = approx.
+|location = Arizona, U.S. |age = 56 million years |photo = Grand canyon hermits
+rest 2010.JPG |photo_caption = The Colorado River flowing through the Grand
+Canyon |photo_size = 230 |label = |label_position = right |coordinates =
+|watercourses=Colorado River |map=Arizona#USA#North America
+|map_caption=Location within Arizona##Location within the United
+States##Location within North America }}
+
+
+The 'Grand Canyon' (Hopi: Ongtupqa; , Navajo: Bidááʼ Haʼaztʼiʼ Tsékooh,Linford,
+Laurence D. Navajo Places. History, Legend, Landscape. University of Utah
+Press. Salt Lake City, UT: 2000.Wilson, Alan with Gene Dennison. Navajo Place
+Names. An observer's guide. Jeffrey Norton Publishers. Guilford, CT: 1995.
+Spanish: Gran Cañón) is a steep-sided canyon carved by the Colorado River in
+Arizona, United States. The Grand Canyon is long, up to wide and attains a
+depth of over a mile ().
+
+The canyon and adjacent rim are contained within Grand Canyon National Park, the
+Kaibab National Forest, Grand Canyon-Parashant National Monument, the Hualapai
+Indian Reservation, the Havasupai Indian Reservation and the Navajo Nation.
+President Theodore Roosevelt was a major proponent of preservation of the Grand
+Canyon area, and visited it on numerous occasions to hunt and enjoy the scenery.
+
+Nearly two billion years of Earth's geological history have been exposed as the
+Colorado River and its tributaries cut their channels through layer after layer
+of rock while the Colorado Plateau was
+uplifted.[http://www.nps.gov/grca/naturescience/geologicformations.htm Geologic
+Formations of the Grand Canyon] National Park Service Retrieved November 17,
+2009 While some aspects about the history of incision of the canyon are debated
+by geologists, several recent studies support the hypothesis that the Colorado
+River established its course through the area about 5 to 6 million years ago.
+Since that time, the Colorado River has driven the down-cutting of the
+tributaries and retreat of the cliffs, simultaneously deepening and widening
+the canyon.
+
+For thousands of years, the area has been continuously inhabited by Native
+Americans, who built settlements within the canyon and its many caves. The
+Pueblo people considered the Grand Canyon a holy site, and made pilgrimages to
+it. The first European known to have viewed the Grand Canyon was García López de
+Cárdenas from Spain, who arrived in 1540.
+
+Rule: |(((a|an|the) )?grand canyon ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((grand canyon)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((grand canyon)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+LOG ANSWER: Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States
+
+QUERY: |where are the appalachain mountains?|
+KEYTERM: appalachain mountains
+
+QUERY: |where are the appalachian mountains?|
+KEYTERM: appalachian mountains
+WIKI TEXT: Appalachian}}
+
+
+{{Infobox mountain range |name=Appalachian Mountains |photo=MonNatForest.jpg
+|photo_caption=August 2007 view from the slopes of Back Allegheny Mountain,
+looking east; visible are Allegheny Mountain (in the Monongahela National Forest
+of West Virginia, middle distance), and Shenandoah Mountain (in the George
+Washington National Forest of Virginia, far distance) |other_name=Appalachians
+|country=United States, France (St. Pierre and Miquelon) |country1=Canada
+|region=Newfoundland and Labrador,Cees R. van Staal,
+[http://gsc.nrcan.gc.ca/mindep/synth_prov/appalachian/index_e.php Mineral
+Deposits of Canada: Regional Metallogeny: Pre-Carboniferous tectonic evolution
+and metallogeny of the Canadian Appalachians] , Geological Survey of Canada
+website Saint Pierre and Miquelon, Québec, Nova Scotia, New Brunswick, Maine,
+New Hampshire, Vermont, Massachusetts, Connecticut, New York, New Jersey,
+Pennsylvania, Maryland, Delaware, Virginia, West Virginia, Ohio, Kentucky,
+Tennessee, North Carolina, South Carolina, Georgia, and Alabama |highest=Mount
+Mitchell |elevation_ft=6684 |range_coordinates = |length_mi=1500 |coordinates =
+|geology= | period=Ordovician–Permian| orogeny=Taconic, Acadian, Alleghanian |map_image=Greatvalley-
+map.png |map_size=275 }}
+
+The 'Appalachian Mountains', , , , .}}, often called 'the Appalachians', are a
+system of mountains in eastern North America. The Appalachians first formed
+roughly 480 million years ago during the Ordovician Period. They once reached
+elevations similar to those of the Alps and the Rocky Mountains before
+experiencing natural erosion. The Appalachian chain is a barrier to east–west
+travel, as it forms a series of alternating ridgelines and valleys oriented in
+opposition to most highways and railroads running east–west.
+
+Definitions vary on the precise boundaries of the Appalachians. The United
+States Geological Survey (USGS) defines the Appalachian Highlands physiographic
+division as consisting of thirteen provinces: the Atlantic Coast Uplands,
+Eastern Newfoundland Atlantic, Maritime Acadian Highlands, Maritime Plain, Notre
+Dame and Mégantic Mountains, Western Newfoundland Mountains, Piedmont, Blue
+Ridge, Valley and Ridge, Saint Lawrence Valley, Appalachian Plateaus, New
+England province, and the Adirondack areas.{{cite web |title=Physiographic
+divisions of the conterminous U. S. |publisher=U.S. Geological Survey
+|url=http://water.usgs.gov/GIS/metadata/usgswrd/XML/physio.xml
+|accessdate=December 6, 2007 | archiveurl= https://web.archive.org/web/20071205-
+095639/http://water.usgs.gov/GIS/metadata/usgswrd/XML/physio.xml| archivedate=
+December 5, 2007 | deadurl= no}} {{cite web |title=The Atlas of
+Canada—Physiographic Regions |url=http://atlas.nrcan.gc.ca/site/english/maps/re-
+ference/anniversary_maps/physiographicregions |accessdate=December 7, 2007 |
+archiveurl= https://web.archive.org/web/20071212081333/http://atlas.nrcan.gc.ca-
+/site/english/maps/reference/anniversary_maps/physiographicregions| archivedate=
+December 12, 2007 | deadurl= no}} A common variant definition does not include
+the Adirondack Mountains, which geologically belong to the Grenville Orogeny and
+have a different geological history from the rest of the Appalachians.{{cite
+peakbagger |rid=1507 |name=Adirondack Mountains |accessdate=December 27, 2007}}
+{{cite book |last= Weidensaul |first= Scott |title= Mountains of the Heart: A
+Natural History of the Appalachians |year= 1994 |publisher= Fulcrum Publishing
+|isbn= 978-1-55591-139-3 |pages= ix |authorlink= Scott Weidensaul}}
+
+Rule: |(((a|an|the) )?appalachian mountains ([^.]*)((is located at|is found at|can be found at|is in|is at|was at|was in|is at the address))([^.]*)\.)|
+Sub: |"$1"|
+Rule: |((appalachian mountains)([^.]*)is the capital([\w ]*)of ([^.]*))|
+Sub: |"$2 is in $5"|
+Rule: |((appalachian mountains)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place) [^.]*))|
+Sub: |"$2$4"|
+
+QUERY: |what is the meaning of life?|
+KEYTERM: meaning of life
+WIKI TEXT: 
+
+
+
+'', one of Post-Impressionist Paul Gauguin's most famous paintings]]
+
+The 'meaning of life', or the 'answer to the question "What is the meaning of
+life?"', pertains to the significance of living or existence in general. Many
+other related questions include: "Why are we here?", "What is life all about?",
+or "What is the purpose of existence?" There have been a large number of
+proposed answers to these questions from many different cultural and
+ideological backgrounds. The search for life's meaning has produced much
+philosophical, scientific, theological, and metaphysical speculation throughout
+history. Different people and cultures believe different things for the answer
+to this question.
+
+The meaning of life as we perceive it is derived from philosophical and
+religious contemplation of, and scientific inquiries about existence, social
+ties, consciousness, and happiness. Many other issues are also involved, such as
+symbolic meaning, ontology, value, purpose, ethics, good and evil, free will,
+the existence of one or multiple gods, conceptions of God, the soul, and the
+afterlife. Scientific contributions focus primarily on describing related
+empirical facts about the universe, exploring the context and parameters
+concerning the "how" of life. Science also studies and can provide
+recommendations for the pursuit of well-being and a related conception of
+morality. An alternative, humanistic approach poses the question, "What is the
+meaning of my life?"
+
+Rule: |((((a|an|the) )?meaning of life)([^.]*)?( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: The meaning of life is the meaning of life?, pertains to the significance of living or existence in general.
+Rule: |((they|it) (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.)|
+Sub: |"$1"|
+LOG ANSWER: it is derived from philosophical and religious contemplation of, and scientific inquiries about existence, social ties, consciousness, and happiness.
+
+QUERY: |what is love?|
+KEYTERM: love
+WIKI TEXT: 
+
+
+
+
+
+
+
+
+'Love' encompasses a range of strong and positive emotional and mental states,
+from the most sublime virtue or good habit, the deepest interpersonal affection
+and to the simplest pleasure. An example of this range of meanings is that the
+love of a mother differs from the love of a spouse, which differs from the love
+of food. Most commonly, love refers to a feeling of strong attraction and
+emotional attachment.Oxford Illustrated American Dictionary (1998) Merriam-
+Webster Collegiate Dictionary (2000)
+
+Love is also considered to be a virtue representing human kindness, compassion,
+and affection, as "the unselfish loyal and benevolent concern for the good of
+another". It may also describe compassionate and affectionate actions towards
+other humans, one's self or animals.Fromm, Erich; The Art of Loving, Harper
+Perennial (1956), Original English Version,
+
+Love in its various forms acts as a major facilitator of interpersonal
+relationships and, owing to its central psychological importance, is one of the
+most common themes in the creative arts. Love has been postulated to be a
+function to keep human beings together against menaces and to facilitate the
+continuation of the species.Helen Fisher. Why We Love: the nature and chemistry
+of romantic love. 2004.
+
+Ancient Greek philosophers identified five forms of love: essentially, familial
+love (in Greek, {{lang|grc-Latn|[[Storge]]}}), friendly love or platonic love
+({{lang|grc-Latn|[[Philia]]}}), romantic love (), guest love () and divine love
+(). Modern authors have distinguished further varieties of love: unrequited
+love, infatuated love, self-love, and courtly love. Asian cultures have also
+distinguished {{lang|zh-Latn|[[Ren (Confucianism)|Ren]]}}, {{lang|sa-
+Latn|[[Kama]]}}, {{lang|sa-Latn|[[Bhakti]]}}, {{lang|sa-Latn|[[Mettā]]}}, {{lang|ar-
+Latn|[[Ishq]]}}, {{lang|he-Latn|[[Chesed]]}}, and other variants or symbioses of
+these states.Liddell and Scott: [http://www.perseus.tufts.edu/hopper/text?doc=P-
+erseus%3Atext%3A1999.04.0057%3Aentry%3Dfili%2Fa φιλία] (J. Mascaró, translator)
+Love has additional religious or spiritual meaning. This diversity of uses and
+meanings combined with the complexity of the feelings involved makes love
+unusually difficult to consistently define, compared to other emotional states.
+
+Rule: |((((a|an|the) )?love)([^.]*)?( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: Love is also considered to be a virtue representing human kindness, compassion, and affection, as the unselfish loyal and benevolent concern for the good of another.
+Rule: |((they|it) (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.)|
+Sub: |"$1"|
+
+QUERY: |what is the scientific method?|
+KEYTERM: scientific method
+WIKI TEXT: 
+
+
+
+
+
+
+ with David Deutsch, proponent of invariant scientific explanations. See [[#DNA
+ example|� DNA example]] below.]]
+
+The 'scientific method' is an empirical method of acquiring knowledge that has
+characterized the development of science since at least the 17th century. It
+involves careful observation, applying rigorous skepticism about what is
+observed, given that cognitive assumptions can distort how one interprets the
+observation. It involves formulating hypotheses, via induction, based on such
+observations; experimental and measurement-based testing of deductions drawn
+from the hypotheses; and refinement (or elimination) of the hypotheses based on
+the experimental findings. These are principles of the scientific method, as
+distinguished from a definitive series of steps applicable to all scientific
+enterprises.
+
+Though diverse models for the scientific method are available, there is in
+general a continuous 'process' that includes observations about the natural
+world. People are naturally inquisitive, so they often come up with questions
+about things they see or hear, and they often develop ideas or hypotheses about
+why things are the way they are. The best hypotheses lead to predictions that
+can be tested in various ways. The most conclusive testing of hypotheses comes
+from reasoning based on carefully controlled experimental data. Depending on how
+well additional tests match the predictions, the original hypothesis may require
+refinement, alteration, expansion or even rejection. If a particular hypothesis
+becomes very well supported, a general theory may be developed.
+
+Although procedures vary from one field of inquiry to another, they are
+frequently the same from one to another. The process of the scientific method
+involves making conjectures (hypotheses), deriving predictions from them as
+logical consequences, and then carrying out experiments or empirical
+observations based on those predictions.See, for example, . His thought
+experiments disprove Aristotle's physics of falling bodies, in [[Two New
+Sciences]]. A hypothesis is a conjecture, based on knowledge obtained while
+seeking answers to the question. The hypothesis might be very specific, or it
+might be broad. Scientists then test hypotheses by conducting experiments or
+studies. A scientific hypothesis must be falsifiable, implying that it is
+possible to identify a possible outcome of an experiment or observation that
+conflicts with predictions deduced from the hypothesis; otherwise, the
+hypothesis cannot be meaningfully tested.
+
+The purpose of an experiment is to determine whether observations agree with or
+conflict with the predictions derived from a hypothesis.Karl R. Popper,
+Conjectures and Refutations: The Growth of Scientific Knowledge, Routledge, 2003
+Experiments can take place anywhere from a garage to CERN's Large Hadron
+Collider. There are difficulties in a formulaic statement of method, however.
+Though the scientific method is often presented as a fixed sequence of steps, it
+represents rather a set of general principles. Not all steps take place in every
+scientific inquiry (nor to the same degree), and they are not always in the same
+order.William Whewell, History of Inductive Science (1837), and in Philosophy of
+Inductive Science (1840) Some philosophers and scientists have argued that there
+is no scientific method; they include physicist Lee Smolin and philosopher Paul
+Feyerabend (in his [[Against Method]]). Robert Nola and Howard Sankey remark
+that "For some, the whole idea of a theory of scientific method is yester-year's
+debate, the continuation of which can be summed up as yet more of the proverbial
+deceased equine castigation. We beg to differ."
+
+Rule: |((((a|an|the) )?scientific method)([^.]*)?( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: The scientific method is an empirical method of acquiring knowledge that has characterized the development of science since at least the 17th century.
+Rule: |((they|it) (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.)|
+Sub: |"$1"|
+LOG ANSWER: they are frequently the same from one to another.
+
+QUERY: |what is a mouse?|
+KEYTERM: mouse
+WIKI TEXT: 
+
+
+
+
+ (Mus musculus)]] A 'mouse', plural 'mice', is a small rodent characteristically
+ having a pointed snout, small rounded ears, a body-length scaly tail and a high
+ breeding rate. The best known mouse species is the common house mouse (Mus
+ musculus). It is also a popular pet. In some places, certain kinds of field
+ mice are locally common. They are known to invade homes for food and shelter.
+
+Species of mice are mostly found in Rodentia, and are present throughout the
+order. Typical mice are found in the genus Mus.
+
+Mice are typically distinguished from rats by their size. Generally, when
+someone discovers a smaller muroid rodent, its common name includes the term
+mouse, while if it is larger, the name includes the term rat. Common terms rat
+and mouse are not taxonomically specific. Scientifically, the term mouse is not
+confined to members of Mus for example, the deer mouse.
+
+Domestic mice sold as pets often differ substantially in size from the common
+house mouse. This is attributable both to breeding and to different conditions
+in the wild. The best-known strain, the white lab mouse, has more uniform traits
+that are appropriate to its use in research.
+
+Cats, wild dogs, foxes, birds of prey, snakes and even certain kinds of
+arthropods have been known to prey heavily upon mice. Nevertheless, because of
+its remarkable adaptability to almost any environment, the mouse is one of the
+most successful mammalian genera living on Earth today.
+
+Mice, in certain contexts, can be considered vermin which are a major source of
+crop damage, causing structural damage and spreading diseases through their
+parasites and feces. In North America, breathing dust that has come in contact
+with mouse excrement has been linked to hantavirus, which may lead to hantavirus
+pulmonary syndrome (HPS).
+
+Primarily nocturnal animals, mice compensate for their poor eyesight with a keen
+sense of hearing, and rely especially on their sense of smell to locate food and
+avoid predators.
+
+Mice build long intricate burrows in the wild. These typically have long
+entrances and are equipped with escape tunnels or routes. In at least one
+species, the architectural design of a burrow is a genetic trait.
+
+Rule: |((((a|an|the) )?mouse)([^.]*)?( (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.))|
+Sub: |"$2$6"|
+LOG ANSWER: A mouse is a small rodent characteristically having a pointed snout, small rounded ears, a body-length scaly tail and a high breeding rate.
+Rule: |((they|it) (is|was|are|were|happens|occurs|takes place|happened|occured|took place)( (a|an|the))? ([^.])*\.)|
+Sub: |"$1"|
+LOG ANSWER: It is also a popular pet.
+
+QUERY: |where are horses?|
+KEYTERM: horses
+WIKI TEXT: 
+
+
+{{subspeciesbox
+| name = Horse status = DOM image = Nokota Horses cropped.jpg image_caption =
+| image2 =Wiehern.ogg image_alt = Two Nokota horses standing in open grassland
+| with rolling hills and trees visible in the background. genus = Equus species
+| = ferus species_link = Wild horse subspecies = caballus authority = Linnaeus,
+| 1758 synonyms = at least 48 published synonyms_ref =
+}} The 'horse' (Equus ferus caballus) is one of two extant subspecies of ''Equus
+ferus''. It is an odd-toed ungulate mammal belonging to the taxonomic family
+Equidae. The horse has evolved over the past 45 to 55&nbsp;million years from a
+small multi-toed creature, [[Eohippus]], into the large, single-toed animal of
+today. Humans began domesticating horses around 4000 BC, and their domestication
+is believed to have been widespread by 3000 BC. Horses in the subspecies
+caballus are domesticated, although some domesticated populations live in the
+wild as feral horses. These feral populations are not true wild horses, as this
+term is used to describe horses that have never been domesticated, such as the
+endangered Przewalski's horse, a separate subspecies, and the only remaining
+true wild horse. There is an extensive, specialized vocabulary used to describe
+equine-related concepts, covering everything from anatomy to life stages, size,
+colors, markings, breeds, locomotion, and behavior.
+
+Horses' anatomy enables them to make use of speed to escape predators and they
+have a well-developed sense of balance and a strong fight-or-flight response.
+Related to this need to flee from predators in the wild is an unusual trait:
+horses are able to sleep both standing up and lying down, with younger horses
+tending to sleep significantly more than adults. Female horses, called mares,
+carry their young for approximately 11&nbsp;months, and a young horse, called a
+foal, can stand and run shortly following birth. Most domesticated horses begin
+training under saddle or in harness between the ages of two and four. They reach
+full adult development by age five, and have an average lifespan of between 25
+and 30&nbsp;years.
+
+Horse breeds are loosely divided into three categories based on general
+temperament: spirited "hot bloods" with speed and endurance; "cold bloods", such
+as draft horses and some ponies, suita

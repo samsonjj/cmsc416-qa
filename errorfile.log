@@ -1,3 +1,28 @@
-Wide character in print at qa-system.pl line 203.
-Wide character in print at qa-system.pl line 203, <STDIN> line 2.
-Wide character in print at qa-system.pl line 203, <STDIN> line 3.
+Wide character in print at qa-system.pl line 255.
+Wide character in print at qa-system.pl line 255, <STDIN> line 2.
+Wide character in print at qa-system.pl line 255, <STDIN> line 3.
+Wide character in print at qa-system.pl line 255, <STDIN> line 4.
+Wide character in print at qa-system.pl line 255, <STDIN> line 5.
+Wide character in print at qa-system.pl line 255, <STDIN> line 7.
+Wide character in print at qa-system.pl line 255, <STDIN> line 8.
+Wide character in print at qa-system.pl line 255, <STDIN> line 9.
+Wide character in print at qa-system.pl line 255, <STDIN> line 10.
+Wide character in print at qa-system.pl line 255, <STDIN> line 13.
+Use of uninitialized value in substitution iterator at qa-system.pl line 285, <STDIN> line 14.
+Wide character in print at qa-system.pl line 255, <STDIN> line 16.
+Use of uninitialized value in substitution iterator at qa-system.pl line 285, <STDIN> line 16.
+Wide character in print at qa-system.pl line 255, <STDIN> line 20.
+Wide character in print at qa-system.pl line 255, <STDIN> line 23.
+Wide character in print at qa-system.pl line 255, <STDIN> line 24.
+Wide character in print at qa-system.pl line 255, <STDIN> line 25.
+Wide character in print at qa-system.pl line 255, <STDIN> line 27.
+Wide character in print at qa-system.pl line 255, <STDIN> line 30.
+Wide character in print at qa-system.pl line 255, <STDIN> line 33.
+Wide character in print at qa-system.pl line 255, <STDIN> line 34.
+Wide character in print at qa-system.pl line 255, <STDIN> line 36.
+Wide character in print at qa-system.pl line 255, <STDIN> line 38.
+Wide character in print at qa-system.pl line 255, <STDIN> line 42.
+Wide character in print at qa-system.pl line 255, <STDIN> line 43.
+Use of uninitialized value $query in scalar chomp at qa-system.pl line 139, <STDIN> line 46.
+Use of uninitialized value $query in lc at qa-system.pl line 140, <STDIN> line 46.
+Terminating on signal SIGINT(2)

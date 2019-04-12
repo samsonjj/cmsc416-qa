@@ -1,0 +1,79 @@
+Question(1): Who is George Washington?
+Correct Answer: George Washington was an American political leader, military general, statesman, and Founding Father who also served as the first president of the United States from 1789 to 1797.
+My System Answer: George Washington was an American political leader, military general, statesman, and Founding Father who also served as the first president of the United States from 1789 to 1797. (correct)
+
+Question(2): Who is Donald Trump?
+Correct Answer: Donald J Trump is the 45th and current president of the United States.
+My System Answer: Donald J Trump is the 45th and current president of the United States. (correct)
+
+Question(3): Who is Oprah Winfrey?
+Correct Answer: Oprah Winfrey is an American media executive, actress, talk show host, television producer and philanthropist.
+My System Answer: Oprah Winfrey is an American media executive, actress, talk show host, television producer and philanthropist. (correct)
+
+Question(4): Where is Budapest?
+Correct Answer: Budapest is in Hungary.
+My System Answer: Budapest is in Hungary, and the tenth-largest city in the European Union by population within city limits. (correct)
+
+Question(5): Where is Central Park?
+Correct Answer: Central Park is an urban park in Manhattan, New York City.
+My System Answer: Central Park is an urban park in Manhattan, New York City. (correct)
+
+Question(6): What is a bicycle?
+Correct Answer: A bicycle is a human-powered or motor- powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other.
+My System Answer: A bicycle is a human-powered or motor- powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other. (correct)
+
+Question(7): Who is George Washington?
+Correct Answer: Chemical engineering is a branch of engineering that uses principles of chemistry, physics, mathematics, biology, and economics to efficiently use, produce, transform, and transport chemicals, materials, and energy.
+My System Answer: Chemical engineering is a branch of engineering that uses principles of chemistry, physics, mathematics, biology, and economics to efficiently use, produce, transform, and transport chemicals, materials, and energy. (correct)
+
+Question(8): What is summer?
+Correct Answer: Summer is the hottest of the four temperate seasons, falling after spring and before autumn.
+My System Answer: Summer is the hottest of the four temperate seasons, falling after spring and before autumn. (correct)
+
+Question(9): When is Christmas?
+Correct Answer: Christmas is on December 25.
+My System Answer: Christmas is on December 25. (correct)
+
+Question(10): When is Mardi Gras?
+Correct Answer: Mardi Gras , or Fat Tuesday, refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday.
+My System Answer: Mardi Gras , or Fat Tuesday, refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday . (correct)
+
+Question(11): Who is Elon Musk?
+Correct Answer: Elon Reeve Musk is a technology entrepreneur, investor, and engineer.
+My System Answer: Elon Musk Elon Reeve Musk is a technology entrepreneur, investor, and engineer. (incorrect)
+
+Question(12): Who is Spongebob?
+Correct Answer: Spongebob Squarepants is an anthropomorphic sponge who lives in a pineapple under the sea in the idyllic town of Bikini Bottom. 
+My System Answer: Spongebobis. (incorrect)
+
+Question(13): Who is the president of the United States?
+Correct Answer: Donald Trump is the president of the United States.
+My System Answer: The President of the United States is the head of state and head of government of the United States of America. (inccorect)
+
+Question(14): Where are the Himalayas?
+Correct Answer: The Himalayas stretch across the northeastern portion of India.
+My System Answer: Himalayas is loosely used to include the Karakoram and some of the other ranges. (incorrect)
+
+Question(15): Where are the Appalachian mountains?
+Correct Answer: The Appalachian Mountains are a system of mountain ranges running along the eastern coast of North America from Newfoundland and Labrador, Canada, in the north to Alabama, USA, in the south.
+My System Answer: I do not know the answer. (incorrect)
+
+Question(16): What is the meaning of life?
+Correct Answer: he meaning of life, or the answer to the question "What is the meaning of life?", pertains to the significance of living or existence in general.
+My System Answer: The meaning of life is the meaning of life?, pertains to the significance of living or existence in general. (incorrect)
+
+Question(17): Where are elephants?
+Correct Answer: African savannah elephants are found in savannah zones in 37 countries south of the Sahara Desert.
+My System Answer: Elephants are large mammals of the family Elephantidae in the order Proboscidea. (incorrect)
+
+Question(18): Who is Kurt Vonnegut?
+Correct Answer: Kurt Vonnegut Jr. was an American writer.
+My System Answer: I could not find any information on kurt vonnegut.
+
+Question(19): When is a leap year?
+Correct Answer: Leap year 2020 will begin on Wdnesday, January 1.
+My System Answer: leap year is a calendar year containing one additional day added to keep the calendar year synchronized with the astronomical or seasonal year. (incorrect)
+
+Question(20): When is an avacado ripe?
+Correct Answer: If the avocado yields to firm gentle pressure you know it's ripe and ready-to-eat.
+My System Answer: I could not find any information on avacado ripe. (incorrect)
