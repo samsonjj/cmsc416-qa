@@ -62,24 +62,27 @@ while( 1 ) {
     print $logFh "\nQUERY: |$query|\n";
 
     #Regex pieces.
-    my $is = "(is|was|are|were)";
-    my $the = "(a|the)";
+    my $is = "(is|was|are|were|happens|occurs|takes place|happened|occured|took place)";
+    my $the = "(a|an|the)";
     #my $tangent = "(,[^,.]*,|\([^.)]*\))";
     my $tangent = "([^.]*)";
     my $it = "(they|it)";
     my $he = "(he|she|they)";
     my $him = "(him|her|them)";
     my $word = "(\\w+)";
-    my $happened = "(happens|occurs|takes place|happened|occured|took place)";
+    my $happened = "(happens|occurs|takes place|happened|occured|took place|begins|begin|beginning)";
     my $when = "(when|during|after|before|between|on|at)";
     my $isAt = "(is located at|is found at|can be found at|is in|is at|was at|was in|is at the address)";
 
     if( $query =~ /^who $is( $the)? (.*)\?$/i ) {
+        my $tempTerm = $4;
         $keyTerm = $4;
-        @queryExpansion[0] = "((($the )?$keyTerm)$tangent( $is( $the)? ([^.])*\\.))";
+        $tempTerm =~ s/ / \\w+ /i;
+        print $logFh "TEMP: |$tempTerm|\n";
+        @queryExpansion[0] = "((($the )?$tempTerm)$tangent( $is( $the)? ([^.])*\\.))";
         @queryExpansion[1] = '"$2$6"';
-        @queryExpansion[0] = "((($the )?$keyTerm)$tangent?(([^.])*\\.))";
-        @queryExpansion[1] = '"$2$6"';
+        @queryExpansion[2] = "((($the )?$tempTerm)$tangent?(([^.])*\\.))";
+        @queryExpansion[3] = '"$2$6"';
     }
     elsif( $query =~ /^who $word ($the )?(.*)\?$/i ) {
         $keyTerm = $4;
@@ -101,15 +104,18 @@ while( 1 ) {
     }
     elsif( $query =~ /^when $is( $the)? (.*)\?/i ) {
         $keyTerm = $4;
-        @queryExpansion[0] = "(($the )?$keyTerm $tangent($is |$happened )?($when)([^.]*)\\.)";
+        @queryExpansion[0] = "(($the )?$keyTerm$tangent $happened ($when )?([^.]*)\\.)";
         @queryExpansion[1] = '"$1"';
         @queryExpansion[2] = "(($happened)([^.]*)\\.)";
         @queryExpansion[3] = $keyTerm.'" $1"';
     }
     elsif( $query =~ /^where $is( $the)? (.*)\?/i ) {
         $keyTerm = $4;
-        @queryExpansion[0] = "(($the )?$keyTerm $tangent($isAt)([^.*)\\.)";
-        @queryExpansion[1] = "$1";
+        @queryExpansion[0] = "(($the )?$keyTerm $tangent($isAt)([^.]*)\\.)";
+        @queryExpansion[1] = '"$1"';
+        @queryExpansion[0] = "(($keyTerm)([^.]*)is the capital([\\w ]*)of ([^.]*))";
+        @queryExpansion[1] = '"$2 is in $5"';
+        # @queryExpansion[1] = "stupid";
     }
     else {
         say "I am sorry I don't know the answer.";
