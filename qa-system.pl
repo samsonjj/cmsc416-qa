@@ -93,7 +93,7 @@
 #    (who, what, when, or where). Also pull the keyTerm from the sentence, which defines the
 #    wikipedia article to search for, from the question. If it matches no predicted question type,
 #    return default reponse.
-# 4) Depending on the type of question, generate a list of rules and substitutions, into the queryExpansions array.
+# 4) Depending on the type of question, generate a list of rules and substitutions, into the queryReformulations array.
 # 5) Iterate through the array. If a match of a rule is found in the wikipedia text, use the corresponding subtitution
 #    regex to generate an answer from the match. If not match is found, print default response.
 # 6) Print the answer.
@@ -154,9 +154,9 @@ while( 1 ) {
         next;
     }
 
-    # Store the query expansions here. They should be ordered by most precise to least precise.
-    my @queryExpansion = ();
-    # Store the answer expansions that correspond to the above query expansions.
+    # Store the query Reformulations here. They should be ordered by most precise to least precise.
+    my @queryReformulation = ();
+    # Store the answer Reformulations that correspond to the above query Reformulations.
     # Store the key term here, which we will search for in wikipedia.
     my $keyTerm;
 
@@ -174,17 +174,17 @@ while( 1 ) {
     my $when = "(when|during|after|before|between|on|at)";
     my $isAt = "(is located at|is found at|can be found at|is in|is at|was at|was in|is at the address)";
 
-    # Run a bunch of regex matches on the query. If matches, create query expansion.
+    # Run a bunch of regex matches on the query. If matches, create query Reformulation.
     # Match who questions.
     if( $query =~ /^who $is( $the)? (.*)\?$/i ) {
         my $tempTerm = $4;
         $keyTerm = $4;
         $tempTerm =~ s/ /([\\w+ ]*)/i;
-        # Generate query expansions.
-        @queryExpansion[0] = "((($the )?$tempTerm)$tangent( $is( $the)? ([^.])*\\.))";
-        @queryExpansion[1] = '"$2$7"';
-        @queryExpansion[2] = "((($the )?$tempTerm)$tangent?(([^.])*\\.))";
-        @queryExpansion[3] = '"$2$6"';
+        # Generate query Reformulations.
+        @queryReformulation[0] = "((($the )?$tempTerm)$tangent( $is( $the)? ([^.])*\\.))";
+        @queryReformulation[1] = '"$2$7"';
+        @queryReformulation[2] = "((($the )?$tempTerm)$tangent?(([^.])*\\.))";
+        @queryReformulation[3] = '"$2$6"';
 
         # [Enhancement 1.1] Search for partial matches
         # Remove commas and quotes from key term.
@@ -192,20 +192,20 @@ while( 1 ) {
         # Split key term into individual words.
         my @partialArray = split(' ', $keyTerm);
 
-        # For each triple, double, and single word combo, add the pattern to the queryExpansions.
-        my $queryExpansionLength = scalar @queryExpansion;
+        # For each triple, double, and single word combo, add the pattern to the queryReformulations.
+        my $queryReformulationLength = scalar @queryReformulation;
         my $partialArrayLength = scalar @partialArray;
         for( my $k=0; $k<3; $k++ ) {
             for( my $i=0; $i<$partialArrayLength-$k; $i++ ) {
-                my $expansion = "";
+                my $Reformulation = "";
                 for( my $j=0; $j<$k; $j++ ) {
                     my $word = $partialArray[$i+$j];
-                    $expansion = $expansion + " $word";
+                    $Reformulation = $Reformulation + " $word";
                 }
-                $expansion =~ s/^\s+|\s+$//g;
-                $queryExpansion[$queryExpansionLength] = "$expansion";
-                $queryExpansion[$queryExpansionLength+1] = '"$1"';
-                $queryExpansionLength += 2;
+                $Reformulation =~ s/^\s+|\s+$//g;
+                $queryReformulation[$queryReformulationLength] = "$Reformulation";
+                $queryReformulation[$queryReformulationLength+1] = '"$1"';
+                $queryReformulationLength += 2;
             }
         }
     }
@@ -214,13 +214,13 @@ while( 1 ) {
         $keyTerm = $4;
         # Pull the verb from the question.
         my $actionVerb = $1;
-        # Generate query expansions.
-        @queryExpansion[0] = "((($word ){1,5})$actionVerb ($the )?$keyTerm)";
-        @queryExpansion[1] = '"$1."';
-        @queryExpansion[2] = "((($word ){1,5})$actionVerb($him|$it))";
-        @queryExpansion[3] = '"$1."';
-        @queryExpansion[4] = "($keyTerm was $actionVerb by ($word){1,5})";
-        @queryExpansion[5] = '"$1."';
+        # Generate query Reformulations.
+        @queryReformulation[0] = "((($word ){1,5})$actionVerb ($the )?$keyTerm)";
+        @queryReformulation[1] = '"$1."';
+        @queryReformulation[2] = "((($word ){1,5})$actionVerb($him|$it))";
+        @queryReformulation[3] = '"$1."';
+        @queryReformulation[4] = "($keyTerm was $actionVerb by ($word){1,5})";
+        @queryReformulation[5] = '"$1."';
 
         # [Enhancement 1.1] Search for partial matches
         # Remove commas and quotes from key term.
@@ -228,31 +228,31 @@ while( 1 ) {
         # Split key term into individual words.
         my @partialArray = split(' ', $keyTerm);
 
-        # For each triple, double, and single word combo, add the pattern to the queryExpansions.
-        my $queryExpansionLength = scalar @queryExpansion;
+        # For each triple, double, and single word combo, add the pattern to the queryReformulations.
+        my $queryReformulationLength = scalar @queryReformulation;
         my $partialArrayLength = scalar @partialArray;
         for( my $k=0; $k<3; $k++ ) {
             for( my $i=0; $i<$partialArrayLength-$k; $i++ ) {
-                my $expansion = "";
+                my $Reformulation = "";
                 for( my $j=0; $j<$k; $j++ ) {
                     my $word = $partialArray[$i+$j];
-                    $expansion = $expansion + " $word";
+                    $Reformulation = $Reformulation + " $word";
                 }
-                $expansion =~ s/^\s+|\s+$//g;
-                $queryExpansion[$queryExpansionLength] = "$expansion";
-                $queryExpansion[$queryExpansionLength+1] = '"$1"';
-                $queryExpansionLength += 2;
+                $Reformulation =~ s/^\s+|\s+$//g;
+                $queryReformulation[$queryReformulationLength] = "$Reformulation";
+                $queryReformulation[$queryReformulationLength+1] = '"$1"';
+                $queryReformulationLength += 2;
             }
         }
     }
     # Match what questions.
     elsif( $query =~ /^what $is( $the)? (.*)\?/i) {
         $keyTerm = $4;
-        # Generate query expansions.
-        @queryExpansion[0] = "((($the )?$keyTerm)$tangent?( $is( $the)? ([^.])*\\.))";
-        @queryExpansion[1] = '"$2$6"';
-        @queryExpansion[2] = "($it $is( $the)? ([^.])*\\.)";
-        @queryExpansion[3] = '"$1"';
+        # Generate query Reformulations.
+        @queryReformulation[0] = "((($the )?$keyTerm)$tangent?( $is( $the)? ([^.])*\\.))";
+        @queryReformulation[1] = '"$2$6"';
+        @queryReformulation[2] = "($it $is( $the)? ([^.])*\\.)";
+        @queryReformulation[3] = '"$1"';
 
         # [Enhancement 1.1] Search for partial matches
         # Remove commas and quotes from key term.
@@ -260,35 +260,35 @@ while( 1 ) {
         # Split key term into individual words.
         my @partialArray = split(' ', $keyTerm);
 
-        # For each triple, double, and single word combo, add the pattern to the queryExpansions.
-        my $queryExpansionLength = scalar @queryExpansion;
+        # For each triple, double, and single word combo, add the pattern to the queryReformulations.
+        my $queryReformulationLength = scalar @queryReformulation;
         my $partialArrayLength = scalar @partialArray;
         for( my $k=0; $k<3; $k++ ) {
             for( my $i=0; $i<$partialArrayLength-$k; $i++ ) {
-                my $expansion = "";
+                my $Reformulation = "";
                 for( my $j=0; $j<$k; $j++ ) {
                     my $word = $partialArray[$i+$j];
-                    $expansion = $expansion + " $word";
+                    $Reformulation = $Reformulation + " $word";
                 }
-                $expansion =~ s/^\s+|\s+$//g;
-                $queryExpansion[$queryExpansionLength] = "$expansion";
-                $queryExpansion[$queryExpansionLength+1] = '"$1"';
-                $queryExpansionLength += 2;
+                $Reformulation =~ s/^\s+|\s+$//g;
+                $queryReformulation[$queryReformulationLength] = "$Reformulation";
+                $queryReformulation[$queryReformulationLength+1] = '"$1"';
+                $queryReformulationLength += 2;
             }
         }
     }
     # Match when questions.
     elsif( $query =~ /^when $is( $the)? (.*)\?/i ) {
         $keyTerm = $4;
-        # Generate query expansions.
-        @queryExpansion[0] = "(($the )?$keyTerm$tangent $happened ($when )?([^.]*)\\.)";
-        @queryExpansion[1] = '"$1"';
-        @queryExpansion[2] = "(($happened)([^.]*)\\.)";
-        @queryExpansion[3] = $keyTerm.'" $1"';
-        @queryExpansion[4] = "(($keyTerm)[^.]*($is)[^.]*($when)( \\w+ \\d+(, \\d+)?))";
-        @queryExpansion[5] = '"$2 $3 $5$7"';
-        @queryExpansion[6] = "($keyTerm $is [^.]*)";
-        @queryExpansion[7] = '"$1"';
+        # Generate query Reformulations.
+        @queryReformulation[0] = "(($the )?$keyTerm$tangent $happened ($when )?([^.]*)\\.)";
+        @queryReformulation[1] = '"$1"';
+        @queryReformulation[2] = "(($happened)([^.]*)\\.)";
+        @queryReformulation[3] = $keyTerm.'" $1"';
+        @queryReformulation[4] = "(($keyTerm)[^.]*($is)[^.]*($when)( \\w+ \\d+(, \\d+)?))";
+        @queryReformulation[5] = '"$2 $3 $5$7"';
+        @queryReformulation[6] = "($keyTerm $is [^.]*)";
+        @queryReformulation[7] = '"$1"';
 
         # [Enhancement 1.1] Search for partial matches
         # Remove commas and quotes from key term.
@@ -296,20 +296,20 @@ while( 1 ) {
         # Split key term into individual words.
         my @partialArray = split(' ', $keyTerm);
 
-        # For each triple, double, and single word combo, add the pattern to the queryExpansions.
-        my $queryExpansionLength = scalar @queryExpansion;
+        # For each triple, double, and single word combo, add the pattern to the queryReformulations.
+        my $queryReformulationLength = scalar @queryReformulation;
         my $partialArrayLength = scalar @partialArray;
         for( my $k=0; $k<3; $k++ ) {
             for( my $i=0; $i<$partialArrayLength-$k; $i++ ) {
-                my $expansion = "";
+                my $Reformulation = "";
                 for( my $j=0; $j<$k; $j++ ) {
                     my $word = $partialArray[$i+$j];
-                    $expansion = $expansion + " $word";
+                    $Reformulation = $Reformulation + " $word";
                 }
-                $expansion =~ s/^\s+|\s+$//g;
-                $queryExpansion[$queryExpansionLength] = "$expansion";
-                $queryExpansion[$queryExpansionLength+1] = '"$1"';
-                $queryExpansionLength += 2;
+                $Reformulation =~ s/^\s+|\s+$//g;
+                $queryReformulation[$queryReformulationLength] = "$Reformulation";
+                $queryReformulation[$queryReformulationLength+1] = '"$1"';
+                $queryReformulationLength += 2;
             }
         }
 
@@ -317,13 +317,13 @@ while( 1 ) {
     # Match where questions.
     elsif( $query =~ /^where $is( $the)? (.*)\?/i ) {
         $keyTerm = $4;
-        # Generate query expansions.
-        @queryExpansion[0] = "(($the )?$keyTerm $tangent($isAt)([^.]*)\\.)";
-        @queryExpansion[1] = '"$1"';
-        @queryExpansion[2] = "(($keyTerm)([^.]*)is the capital([\\w ]*)of ([^.]*))";
-        @queryExpansion[3] = '"$2 is in $5"';
-        @queryExpansion[4] = "(($keyTerm)$tangent( $is [^.]*))";
-        @queryExpansion[5] = '"$2$4"';
+        # Generate query Reformulations.
+        @queryReformulation[0] = "(($the )?$keyTerm $tangent($isAt)([^.]*)\\.)";
+        @queryReformulation[1] = '"$1"';
+        @queryReformulation[2] = "(($keyTerm)([^.]*)is the capital([\\w ]*)of ([^.]*))";
+        @queryReformulation[3] = '"$2 is in $5"';
+        @queryReformulation[4] = "(($keyTerm)$tangent( $is [^.]*))";
+        @queryReformulation[5] = '"$2$4"';
 
         # [Enhancement 1.1] Search for partial matches
         # Remove commas and quotes from key term.
@@ -331,20 +331,20 @@ while( 1 ) {
         # Split key term into individual words.
         my @partialArray = split(' ', $keyTerm);
 
-        # For each triple, double, and single word combo, add the pattern to the queryExpansions.
-        my $queryExpansionLength = scalar @queryExpansion;
+        # For each triple, double, and single word combo, add the pattern to the queryReformulations.
+        my $queryReformulationLength = scalar @queryReformulation;
         my $partialArrayLength = scalar @partialArray;
         for( my $k=0; $k<3; $k++ ) {
             for( my $i=0; $i<$partialArrayLength-$k; $i++ ) {
-                my $expansion = "";
+                my $Reformulation = "";
                 for( my $j=0; $j<$k; $j++ ) {
                     my $word = $partialArray[$i+$j];
-                    $expansion = $expansion + " $word";
+                    $Reformulation = $Reformulation + " $word";
                 }
-                $expansion =~ s/^\s+|\s+$//g;
-                $queryExpansion[$queryExpansionLength] = "$expansion";
-                $queryExpansion[$queryExpansionLength+1] = '"$1"';
-                $queryExpansionLength += 2;
+                $Reformulation =~ s/^\s+|\s+$//g;
+                $queryReformulation[$queryReformulationLength] = "$Reformulation";
+                $queryReformulation[$queryReformulationLength+1] = '"$1"';
+                $queryReformulationLength += 2;
             }
         }
     }
@@ -353,13 +353,6 @@ while( 1 ) {
         say "I am sorry I don't know the answer.";
         next;
     }
-
-    print $logFh "QUERY EXPANSIONS: \n";
-    my $queryExpansionLength = scalar @queryExpansion;
-    for( my $i=0; $i<$queryExpansionLength; $i+=2) {
-        print $logFh "    $queryExpansion[$i]\n";
-    }
-
 
     print $logFh "KEYTERM: $keyTerm\n";
 
@@ -390,18 +383,18 @@ while( 1 ) {
     $wikiText =~ s/Retrieved[^.]*\.//g;
     $wikiText =~ s/\.[ \d\-]*\.//g;
 
-    # Stores the captured text, which matched the expansion.
+    # Stores the captured text, which matched the Reformulation.
     my $capture = "";
 
     # [Enhancement 3] Storing all matches and partial matches in an array, and assigning scores in the loop below
     # Store answers in array
     my %answers = ();
 
-    # Search for each expansion. Return the first match.
-    my $expansionLength = scalar @queryExpansion;
-    for( my $i=0; $i<$expansionLength; $i=$i+2)  {
-        my $rule = $queryExpansion[$i];
-        my $sub = $queryExpansion[$i+1];
+    # Search for each Reformulation. Return the first match.
+    my $ReformulationLength = scalar @queryReformulation;
+    for( my $i=0; $i<$ReformulationLength; $i=$i+2)  {
+        my $rule = $queryReformulation[$i];
+        my $sub = $queryReformulation[$i+1];
         print $logFh "Rule: |$rule|\n";
         print $logFh "Sub: |$sub|\n";
         # [Enhancement 3] match all matches in text.
@@ -418,7 +411,7 @@ while( 1 ) {
         }
     }
 
-    if( !exists $answers{0} ) {
+    if( exists $answers{0} ) {
         my @answer = @{ $answers{0} };
         my $answerText = $answer[0];
         my $answerScore = $answer[1];
@@ -436,49 +429,72 @@ while( 1 ) {
 
             # For each combination of possible answers, compare first and last words. If they match, perform tiling, and add new answer with
             ## new score.
-            for my $answerKey1 (keys %answers) {
-                for my $answerKey2 (keys %answers) {
+            my @answerKeys = keys %answers;
+            for my $answerKey1 (@answerKeys) {
+                for my $answerKey2 (@answerKeys) {
                     # Only perform if we are comparing two DIFFERENT answers
                     if($answerKey1 == $answerKey2) {
                         next;
                     }
+                    my @answer1 = @{ $answers{$answerKey1} };  
+                    my @answer2 = @{ $answers{$answerKey2} };  
+                    my $answerText1 = $answer1[0];
+                    my $answerText2 = $answer2[0];
+                    my $answerScore1 = $answer1[1];
+                    my $answerScore2 = $answer2[2];
+
                     # Obtain last word of first answer.
-                    my $last1 = $answerKey1 =~ /[^ ]*$/i;
+                    my $last1 = $answerText1 =~ /[^ ]*$/i;
+                    $last1 =~ s/[."',?!]//g;
                     # Obtain first word of second answer.
-                    my $first2 = $answerKey2 =~ /^[^ ]*/i;
-                    # If they match, perform tiling
+                    my $first2 = $answerText2 =~ /^[^ ]*/i;
+                    # If they match, perform tiling.
                     if( $last1 eq $first2) {
-                        
+                        my $restAnswerText2 = $answerText2 =~ s/$first2//ee;
+                        $restAnswerText2 =~ s/^\s+|\s+$//g;
+                        my $newAnswerText = $answerText1.$restAnswerText2;
+                        # The new score takes into account the scores of the two answers which have been tiled together.
+                        # It is a product of 2 factors.
+                        # Factor 1: (2 - $answerScore1 - $answerScore2) / 2)
+                        ## Value between 0 and 1 which represents how bad the previous scores were.
+                        ## We want good scoring answers to produce badly scored tiled answers (since the previous answers were likely better).
+                        # Factor 2: (( $answerScore1 + $answerScore2) / 2)
+                        ## Value between 0 and 1 which represents how good the previous scores were.
+                        ## We want bad scoring answers to retain some of the value for how bad they were before (two very bad answers should not make a good answer);
+                        my $newAnswerScore = ((2 - $answerScore1 - $answerScore2) / 2) * (( $answerScore1 + $answerScore2) / 2);
+                        my $answersLength = scalar keys %answers;
+                        $answers{$answersLength} = [$newAnswerText, $newAnswerScore];
                     }
                 }
             }
+
+            my $maxScore = 0;
+            my $maxAnswer = "";
+            for my $answerKey (keys %answers) {
+                my @answer = @{ $answers{0} };
+                my $answerText = $answer[0];
+                my $answerScore = $answer[1];
+                if( $answerScore > $maxScore ) {
+                    $maxAnswer = $answerText;
+                    $maxScore = $answerScore;
+                }
+            }
+            if( $maxAnswer !~ /\.$/ ) {
+                $maxAnswer = $maxAnswer.".";
+            }
+            say "QA: $maxAnswer";
         }
     }
     else {
         say "QA: I do not know the answer.";
     }
 
-    my $firstAnswer = "";
-    if( exists $answers{0} ) {
-        my @answer = @{ $answers{0} };
-        $firstAnswer = $answer[0];
-    }
+    
 
-    if( $firstAnswer ne "" ) {
-
-        # Post process the answer.
-        # Remove trailling whitespace.
-        $firstAnswer =~ s/^\s+|\s+$//g;
-
-        # Make sure it ends in a period.
-        if( $firstAnswer !~ /\.$/ ) {
-            $firstAnswer = $firstAnswer.".";
-        }
-
-        say "QA: $firstAnswer";
-    }
-    else {
-        say "QA: I do not know the answer.";
+    print $logFh "QUERY ReformulationS: \n";
+    my $queryReformulationLength = scalar @queryReformulation;
+    for( my $i=0; $i<$queryReformulationLength; $i+=2) {
+        print $logFh "    $queryReformulation[$i]\n";
     }
 }
 
