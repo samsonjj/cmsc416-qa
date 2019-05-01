@@ -32,11 +32,13 @@ WIKI TEXT:
 | residence = Mount Vernon parents = Augustine WashingtonMary Ball Washington
 | awards = Congressional Gold MedalThanks of Congress signature = George
 | Washington signature.svg signature_alt = Cursive signature in ink allegiance =
-| branch = Colonial forces Continental Army serviceyears = 1752–58 (Colonial
-| forces)1775–83 (Continental Army)1798–99 (U.S. Army) rank = Colonel (Colonial
-| forces)General and Commander-in-Chief (Continental Army) (United States Army)
-| General of the Armies (promoted posthumously in 1976 by an Act of Congress)
-| commands = Virginia RegimentContinental ArmyUnited States Army battles =
+| Kingdom of Great BritainUnited States of America branch = British colonial
+| forcesContinental ArmyUnited States Army serviceyears = 1752–58 (Colonial
+| forces)1775–83 (Continental Army)1798–99 (U.S. Army) rank = Colonel (colonial
+| forces)General and Commander-in-Chief (Continental Army) Lieutenant general
+| (U.S. Army)General of the Armies (promoted posthumously in 1976 by an Act of
+| Congress) commands = Virginia RegimentContinental ArmyUnited States Army
+| battles =
 French and Indian War
 * Battle of Jumonville Glen
 * Battle of Fort Necessity
@@ -70,21 +72,22 @@ Constitution and was then elected president by the Electoral College in the
 first two elections. He implemented a strong, well-financed national government
 while remaining impartial in a fierce rivalry between cabinet members Thomas
 Jefferson and Alexander Hamilton. During the French Revolution, he proclaimed a
-policy of neutrality while sanctioning the Jay Treaty. To pacify the South and
-preserve national unity, the president and Congress passed legal measures that
-protected slavery. He set enduring precedents for the office of president,
-including the title "President of the United States", and his Farewell Address
-is widely regarded as a pre-eminent statement on republicanism.
+policy of neutrality while sanctioning the Jay Treaty. He set enduring
+precedents for the office of president, including the title "President of the
+United States", and his Farewell Address is widely regarded as a pre-eminent
+statement on republicanism.
 
-Washington utilized slave labor, owning and trading African American slaves, but
-he became troubled with the institution of slavery and freed them in his 1799
-will. He endeavored to assimilate Native Americans into Western culture, but
-responded to their hostility in times of war. He was a member of the Anglican
-Church and the Freemasons, and he urged tolerance for all religions in his roles
-as general and president. Upon his death, he was eulogized as "first in war,
-first in peace, and first in the hearts of his countrymen." He has been
-memorialized by monuments, art, geographical locations, stamps, and currency,
-and many scholars and polls rank him among the top American presidents.
+Washington owned African American slaves for labor and trading, and supported
+measures passed by Congress protecting slavery, in order to preserve national
+unity. He later became troubled with the institution of slavery and freed his
+slaves in a 1799 will. He endeavored to assimilate Native Americans into Western
+culture, but responded to their hostility in times of war. He was a member of
+the Anglican Church and the Freemasons, and he urged tolerance for all religions
+in his roles as general and president. Upon his death, he was eulogized as
+"first in war, first in peace, and first in the hearts of his countrymen." He
+has been memorialized by monuments, art, geographical locations, stamps, and
+currency, and many scholars and polls rank him among the top American
+presidents.
 
 Rule: |((((a|an|the) )?george([\w+ ]*)washington)([^.]*)( (is|was|are|were|happens|occurs|takes place|happened|occured|took place|did)( (a|an|the))? ([^.])*\.))|
 Sub: |"$2$7"|
@@ -839,6 +842,14 @@ ANSWER (score = 0.2):
 ANSWER (score = 0.2): 
 ANSWER (score = 0.2): 
 ANSWER (score = 0.2): 
+ANSWER (score = 0.2): 
+ANSWER (score = 0.2): 
+ANSWER (score = 0.2): 
+ANSWER (score = 0.2): 
+ANSWER (score = 0.2): 
+ANSWER (score = 0.2): 
+ANSWER (score = 0.2): 
+ANSWER (score = 0.2): 
 Rule: ||
 Sub: |"$1"|
 ANSWER (score = 0.142857142857143): 
@@ -1508,4 +1519,38 @@ ANSWER (score = 0.142857142857143):
 ANSWER (score = 0.142857142857143): 
 ANSWER (score = 0.142857142857143): 
 ANSWER (score = 0.142857142857143): 
-ANSWER (score = 0.14
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.142857142857143): 
+ANSWER (score = 0.14285714285714
