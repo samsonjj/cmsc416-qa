@@ -122,10 +122,16 @@
 use warnings;
 use strict;
 use feature 'say';
-use WWW::Wikipedia;
 
 # Import wikipeida module.
+use WWW::Wikipedia;
+# Import WordNet module.
+use WordNet::QueryData;
+
+# Create wikipedia object.
 my $wiki = WWW::Wikipedia->new( clean_html => 1 );
+# Create wordnet object.
+my $wn = WordNet::QueryData->new( noload => 1);
 
 # Open log file.
 my $argsCount = scalar @ARGV;
