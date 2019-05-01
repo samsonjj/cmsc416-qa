@@ -267,6 +267,28 @@ while( 1 ) {
         next;
     }
 
+    ### BEGIN [Enhancement 1.2] Use WordNet to create extra query reformulations
+
+    # Iterate through each word in the keyTerm.
+    my @keyWords = split(" ", $keyTerm);
+    my $numWords = scalar @keyWords;
+    for(my $j=0; $j<$numWords; $j++) {
+        my $word = $keyWords[$j];
+        # Get senses of the word.
+        my @senses = $wn->querySense($word);
+        # For each sense, obtain all synonyms, and add them to query reformulations.
+        for my $sense (@senses) {
+            my @synonymSenses = $wn->querySense($sense, "syns");
+            for my $synonym (@synonymSenses) {
+                $synonym =~ s/^([^#])#/$1/;
+                my $queryReformulationLength = scalar @queryReformulation;
+                $queryReformulation[$queryReformulationLength] = "[^.]*".$synonym."[^.]*\\.";
+                $queryReformulation[$queryReformulationLength+1] = '"$1"';
+            }
+        }
+    }
+    ### END [Enhancement 1.2]
+
     ### BEGIN [Enhancement 1.1] Search for partial matches
     # Remove commas and quotes from key term.
     $keyTerm =~ s/[,'"]*//g;
@@ -309,7 +331,7 @@ while( 1 ) {
 
     # Remove newline characters from wikitext, since WWW::Wikipedia adds extras for aesthetics.
     $wikiText =~ s/\s+/ /g;
-    # Remove parthentsized sections, so that we have a more raw text to use, that will be more likely to follow predicted grammatical structures.
+    # Remove parethesized sections, so that we have a more raw text to use, that will be more likely to follow predicted grammatical structures.
     $wikiText =~ s/\([^()]*\)//g;
     $wikiText =~ s/\[([^\[\]]|(?0))*]//g;
     # Remove weird characters.
@@ -477,7 +499,7 @@ while( 1 ) {
     
 
     print $logFh "QUERY ReformulationS: \n";
-    my $queryReformulationLength = scalar @queryReformulation;
+    $queryReformulationLength = scalar @queryReformulation;
     for( my $i=0; $i<$queryReformulationLength; $i+=2) {
         print $logFh "    $queryReformulation[$i]\n";
     }

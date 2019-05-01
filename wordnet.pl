@@ -1,6 +1,8 @@
 use WordNet::QueryData;
  
 my $wn = WordNet::QueryData->new( noload => 1);
+
+print join(", ", $wn->querySense("dog#n#5", "syns")), "\n";
  
 print "Synset: ", join(", ", $wn->querySense("cat#n#7", "syns")), "\n";
 print "Hyponyms: ", join(", ", $wn->querySense("cat#n#1", "hypo")), "\n";
